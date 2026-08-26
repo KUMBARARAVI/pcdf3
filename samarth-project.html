@@ -1,0 +1,485 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PM Samarth — Sewing &amp; Tailor Training | PCDF Trust</title>
+  <meta name="description" content="PCDF Trust PM Samarth project provides free sewing machine and tailoring training to women in Karnataka." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    #hero { background: linear-gradient(135deg,#7b1fa2 0%,#ad1457 40%,#e91e63 100%); }
+    #hero .hero-badge { background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.35); }
+    .section-tag{background:#fce4ec;color:#880e4f;}
+    .section-heading{color:#880e4f;}
+    .overview-img-badge{background:linear-gradient(135deg,#7b1fa2,#e91e63);}
+    .obj-card:hover{border-color:#e91e63;}
+    .obj-icon{background:#fce4ec;color:#ad1457;}
+    .highlight-item{background:#fce4ec;color:#880e4f;}
+    .hero-stat-num{color:#f8bbd0;}
+    .step-number{background:linear-gradient(135deg,#7b1fa2,#e91e63);}
+    .impact-card-icon{background:#fce4ec;}
+    .impact-card-num{color:#880e4f;}
+    footer{background:#1a0a2e;}
+    .gallery-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.25rem;margin-top:2rem;}
+    .gallery-item{border-radius:var(--radius);overflow:hidden;box-shadow:var(--card-shadow);position:relative;aspect-ratio:4/3;cursor:pointer;transition:var(--transition);}
+    .gallery-item:hover{transform:translateY(-4px);box-shadow:var(--card-hover);}
+    .gallery-item img{width:100%;height:100%;object-fit:cover;transition:transform 0.4s ease;}
+    .gallery-item:hover img{transform:scale(1.06);}
+    .gallery-caption{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(0,0,0,0.65));color:#fff;padding:1rem 0.75rem 0.6rem;font-size:0.82rem;font-weight:500;}
+    #lightbox{display:none;position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,0.92);align-items:center;justify-content:center;flex-direction:column;}
+    #lightbox.open{display:flex;}
+    #lightbox img{max-width:90vw;max-height:82vh;border-radius:8px;}
+    #lightbox-close{position:absolute;top:1rem;right:1.5rem;font-size:2rem;color:#fff;cursor:pointer;background:none;border:none;}
+    #lightbox-caption{color:#eee;margin-top:0.75rem;font-size:0.9rem;}
+    .prog-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:1.5rem;margin-top:2rem;}
+    .prog-card{background:#fff;border:1px solid #f8bbd0;border-radius:var(--radius);padding:1.75rem 1.5rem;box-shadow:var(--card-shadow);transition:var(--transition);text-align:center;}
+    .prog-card:hover{transform:translateY(-4px);box-shadow:var(--card-hover);border-color:#e91e63;}
+    .prog-icon{font-size:2.5rem;margin-bottom:1rem;}
+    .prog-card h3{color:#880e4f;margin-bottom:0.5rem;font-size:1rem;}
+    .prog-card p{color:var(--text-mid);font-size:0.88rem;}
+    .back-link{display:inline-flex;align-items:center;gap:0.4rem;color:#fff;font-size:0.85rem;margin-bottom:1.5rem;opacity:0.85;transition:opacity 0.2s;}
+    .back-link:hover{opacity:1;color:#fff;}    .gallery-filter-btn{padding:0.45rem 1.1rem;border:2px solid #e91e63;background:#fff;color:#ad1457;border-radius:50px;font-size:0.82rem;font-weight:600;cursor:pointer;transition:all 0.25s;}
+    .gallery-filter-btn.active,.gallery-filter-btn:hover{background:#e91e63;color:#fff;}
+    .gallery-item.hidden{display:none;}
+  </style>
+</head>
+<body>
+
+<nav id="navbar" role="navigation" aria-label="Main navigation">
+  <div class="container navbar-inner">
+    <a href="awd-project.html" class="navbar-brand">
+      <div class="brand-logo">🧵</div>
+      <div class="brand-text">
+        <span class="brand-name">PM Samarth</span>
+        <span class="brand-sub">PCDF Trust</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#objectives">Objectives</a></li>
+      <li><a href="#programme">Programme</a></li>
+      <li><a href="#how-it-works">How It Works</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#impact">Impact</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="hamburger" role="button" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<div class="mobile-nav" aria-label="Mobile navigation">
+  <ul>
+    <li><a href="#overview">Overview</a></li>
+    <li><a href="#objectives">Objectives</a></li>
+    <li><a href="#programme">Programme</a></li>
+    <li><a href="#how-it-works">How It Works</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#impact">Impact</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-overlay-pattern"></div>
+  <div class="container">
+    <div class="hero-content">
+      <a href="awd-project.html" class="back-link">← Back to PCDF Trust Projects</a>
+      <div class="hero-badge">🧵 PCDF Trust &nbsp;|&nbsp; Women Empowerment Initiative</div>
+      <h1 class="hero-title" style="font-size:clamp(1.8rem,4.5vw,3.5rem);">
+        Progressive Community &amp;<br /><span>Development Foundation Trust</span>
+      </h1>
+      <h2 class="hero-tagline" style="font-size:clamp(1.2rem,3vw,1.8rem);color:#f8bbd0;font-weight:700;margin-bottom:0.5rem;font-style:normal;font-family:'Poppins',sans-serif;">
+        PM Samarth — Sewing Machine &amp; Tailor Training
+      </h2>
+      <p class="hero-tagline">"Stitching Skills, Weaving Futures — Empowering Women One Stitch at a Time."</p>
+      <p class="hero-desc">A Government of India–supported vocational training programme that equips women from rural Karnataka with professional tailoring &amp; sewing skills — building livelihoods, dignity, and self-reliance.</p>
+      <div class="hero-buttons">
+        <a href="#overview" class="btn btn-primary">🧵 Explore the Project</a>
+        <a href="#gallery" class="btn btn-outline">📷 View Training Gallery</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat-item"><span class="hero-stat-num">100+</span><span class="hero-stat-label">Women Trained</span></div>
+        <div class="hero-stat-item"><span class="hero-stat-num">Free</span><span class="hero-stat-label">Training &amp; Kit</span></div>
+        <div class="hero-stat-item"><span class="hero-stat-num">3</span><span class="hero-stat-label">Months Program</span></div>
+        <div class="hero-stat-item"><span class="hero-stat-num">Muddapura</span><span class="hero-stat-label">Karnataka</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="scrolling-gallery">
+    <div class="scrolling-gallery-track">
+      <img src="assets/samarth-gallery/samarth_training_01.jpg" alt="Training Session">
+      <img src="assets/samarth-gallery/samarth_sewing_02.jpg" alt="Sewing Work">
+      <img src="assets/samarth-gallery/samarth_certificate_01.jpg" alt="Certificate Distribution">
+      <img src="assets/samarth-gallery/samarth_sewing_07.jpg" alt="Sewing Work">
+      <img src="assets/samarth-gallery/samarth_training_02.jpg" alt="Training Session">
+      <img src="assets/samarth-gallery/samarth_sewing_06.jpg" alt="Sewing Work">
+      <img src="assets/samarth-gallery/samarth_certificate_02.jpg" alt="Certificate Ceremony">
+      <img src="assets/samarth-gallery/samarth_training_03.jpg" alt="Practical Session">
+      <!-- Repeat for seamless loop -->
+      <img src="assets/samarth-gallery/samarth_training_01.jpg" alt="Training Session">
+      <img src="assets/samarth-gallery/samarth_sewing_02.jpg" alt="Sewing Work">
+      <img src="assets/samarth-gallery/samarth_certificate_01.jpg" alt="Certificate Distribution">
+      <img src="assets/samarth-gallery/samarth_sewing_07.jpg" alt="Sewing Work">
+      <img src="assets/samarth-gallery/samarth_training_02.jpg" alt="Training Session">
+      <img src="assets/samarth-gallery/samarth_sewing_06.jpg" alt="Sewing Work">
+      <img src="assets/samarth-gallery/samarth_certificate_02.jpg" alt="Certificate Ceremony">
+      <img src="assets/samarth-gallery/samarth_training_03.jpg" alt="Practical Session">
+    </div>
+  </div>
+  <div class="scroll-indicator" aria-hidden="true">
+    <span>Scroll</span>
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+  </div>
+</section>
+
+<!-- OVERVIEW -->
+<section id="overview">
+  <div class="container">
+    <div class="overview-grid">
+      <div class="overview-image">
+        <img class="overview-img-main" src="assets/samarth-gallery/samarth_training_02.jpg" alt="Women tailoring training session" loading="lazy" />
+        <div class="overview-img-badge"><span>🧵 PM Samarth</span>Government of India<br />Vocational Scheme</div>
+      </div>
+      <div class="overview-text">
+        <span class="section-tag">About the Project</span>
+        <h2 class="section-heading">What is PM Samarth?</h2>
+        <p>The <strong>PM Samarth (Pradhan Mantri Samarth) Scheme</strong> is a Government of India flagship programme for integrated skill development in the textile sector. <strong>PCDF Trust</strong> is proud to be an implementing partner, running free sewing machine and tailoring training for women in <strong>Muddapura, Ballari District, Karnataka</strong>.</p>
+        <p>The training covers both theoretical knowledge and hands-on practical sessions — from basic machine operation to professional garment construction. Upon successful completion, participants receive a <strong>nationally recognised certification</strong> and are supported in accessing employment and self-employment opportunities.</p>
+        <p>PCDF Trust works closely with the local community to identify eligible women, provide quality instruction, and monitor progress through the duration of the programme — ensuring every participant reaches her full potential.</p>
+        <div class="overview-highlights">
+          <div class="highlight-item"><span class="highlight-icon">🧵</span> Tailoring Skills</div>
+          <div class="highlight-item"><span class="highlight-icon">🎓</span> Certified Training</div>
+          <div class="highlight-item"><span class="highlight-icon">♀️</span> Women Empowerment</div>
+          <div class="highlight-item"><span class="highlight-icon">💰</span> Livelihood Support</div>
+          <div class="highlight-item"><span class="highlight-icon">🏛️</span> Govt. of India Scheme</div>
+          <div class="highlight-item"><span class="highlight-icon">🤝</span> Community Led</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OBJECTIVES -->
+<section id="objectives" style="background:var(--off-white);">
+  <div class="container">
+    <div class="section-intro">
+      <span class="section-tag">What We Aim For</span>
+      <h2 class="section-heading">Project Objectives</h2>
+      <p class="section-subheading">Six core goals guide every activity of the PM Samarth Tailoring Programme — from skill building to sustainable livelihoods.</p>
+    </div>
+    <div class="objectives-grid">
+      <div class="obj-card"><div class="obj-icon">🧵</div><div class="obj-body"><h3>Provide Vocational Skills</h3><p>Equip rural women with hands-on sewing and tailoring skills that are immediately employable in the local and regional market.</p></div></div>
+      <div class="obj-card"><div class="obj-icon">💰</div><div class="obj-body"><h3>Create Livelihood Opportunities</h3><p>Enable trained women to start home-based tailoring businesses or secure employment in garment industries.</p></div></div>
+      <div class="obj-card"><div class="obj-icon">♀️</div><div class="obj-body"><h3>Empower Women Socially</h3><p>Build self-confidence, financial independence, and decision-making ability among women in rural communities.</p></div></div>
+      <div class="obj-card"><div class="obj-icon">🎓</div><div class="obj-body"><h3>National Certification</h3><p>Ensure participants complete assessments and receive Government of India-recognised certificates under the NSQF framework.</p></div></div>
+      <div class="obj-card"><div class="obj-icon">🏘️</div><div class="obj-body"><h3>Community Development</h3><p>Strengthen the local economy by keeping skills and income within the community, reducing migration and poverty.</p></div></div>
+      <div class="obj-card"><div class="obj-icon">📈</div><div class="obj-body"><h3>Measure &amp; Scale Impact</h3><p>Document outcomes, track post-training employment and income, and use evidence to expand the programme to more villages.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROGRAMME DETAILS -->
+<section id="programme">
+  <div class="container">
+    <div class="section-intro">
+      <span class="section-tag">What We Offer</span>
+      <h2 class="section-heading">Training Programme Details</h2>
+      <p class="section-subheading">A comprehensive, fully funded training package designed to take participants from zero experience to job-ready professionals.</p>
+    </div>
+    <div class="prog-grid">
+      <div class="prog-card"><div class="prog-icon">📅</div><h3>Duration</h3><p>3-month intensive training (approx. 90 days), 6 days a week, practical &amp; theory sessions daily.</p></div>
+      <div class="prog-card"><div class="prog-icon">💸</div><h3>Completely Free</h3><p>No fees charged. Training, materials, and certification are fully sponsored under the PM Samarth Scheme.</p></div>
+      <div class="prog-card"><div class="prog-icon">🪡</div><h3>Hands-on Practical</h3><p>Trainees work on actual sewing machines — learning basic stitching, garment cutting, finishing, and alterations.</p></div>
+      <div class="prog-card"><div class="prog-icon">📖</div><h3>Theory &amp; Safety</h3><p>Covers machine anatomy, fabric types, measurement techniques, and workplace safety standards.</p></div>
+      <div class="prog-card"><div class="prog-icon">🏅</div><h3>Assessment &amp; Certificate</h3><p>End-of-course assessment under NSQF. Nationally recognised certificate awarded on successful completion.</p></div>
+      <div class="prog-card"><div class="prog-icon">🔗</div><h3>Placement Support</h3><p>PCDF Trust assists graduates with job linkages, connections to local garment units, and self-employment guidance.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="how-it-works" style="background:var(--off-white);">
+  <div class="container">
+    <div class="section-intro">
+      <span class="section-tag">Step-by-Step</span>
+      <h2 class="section-heading">How the Training Works</h2>
+      <p class="section-subheading">From enrolment to certification — the complete participant journey.</p>
+    </div>
+    <div class="how-awd-steps">
+      <div class="step-card"><div class="step-number">1</div><div class="step-body"><h3>Identification &amp; Enrolment</h3><p>PCDF Trust field officers identify eligible women from local communities, explain the scheme benefits, and complete the online registration through the PM Samarth portal.</p></div></div>
+      <div class="step-card"><div class="step-number">2</div><div class="step-body"><h3>Orientation &amp; Introduction</h3><p>All new batches attend an orientation session covering the course structure, attendance requirements, safety guidelines, and machine familiarisation exercise.</p></div></div>
+      <div class="step-card"><div class="step-number">3</div><div class="step-body"><h3>Daily Training Sessions</h3><p>Participants attend theory classes in the morning followed by hands-on practical sessions on industrial sewing machines — progressively building speed and accuracy.</p></div></div>
+      <div class="step-card"><div class="step-number">4</div><div class="step-body"><h3>Progress Monitoring</h3><p>PCDF Trust trainers conduct weekly assessments and provide individual feedback, ensuring every participant keeps pace with the learning objectives.</p></div></div>
+      <div class="step-card"><div class="step-number">5</div><div class="step-body"><h3>Final Assessment</h3><p>An external assessor from the authorised Sector Skill Council (SSC) conducts the final evaluation on both theory and practical components at the end of the training period.</p></div></div>
+      <div class="step-card"><div class="step-number">6</div><div class="step-body"><h3>Certification &amp; Placement</h3><p>Successful candidates receive their nationally recognised certificate. PCDF Trust then assists them with placement support, self-employment planning, and access to micro-finance options.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <div class="container">
+    <div class="section-intro">
+      <span class="section-tag">Field Photos</span>
+      <h2 class="section-heading">Training Gallery</h2>
+      <p class="section-subheading">
+        Real moments from the training centre at Muddapura No.10 and Kampli, Ballari District, Karnataka.
+      </p>
+    </div>
+
+    <!-- Filter Tabs -->
+    <div style="display:flex;gap:0.75rem;flex-wrap:wrap;margin-bottom:1.5rem;margin-top:1rem;">
+      <button class="gallery-filter-btn active" onclick="filterGallery('all',this)">All Photos</button>
+      <button class="gallery-filter-btn" onclick="filterGallery('training',this)">🧑‍🏫 Training Sessions</button>
+      <button class="gallery-filter-btn" onclick="filterGallery('sewing',this)">🧵 Sewing Work</button>
+      <button class="gallery-filter-btn" onclick="filterGallery('certificate',this)">🏅 Certificate Distribution</button>
+    </div>
+
+    <div class="gallery-grid" id="main-gallery">
+
+      <!-- Training Sessions -->
+      <div class="gallery-item" data-cat="training" onclick="openLightbox('assets/samarth-gallery/samarth_training_01.jpg','Batch training session — Muddapura, 17 March 2026')">
+        <img src="assets/samarth-gallery/samarth_training_01.jpg" alt="Training batch session" loading="lazy" />
+        <div class="gallery-caption">Batch Session — Muddapura, 17 Mar 2026</div>
+      </div>
+      <div class="gallery-item" data-cat="training" onclick="openLightbox('assets/samarth-gallery/samarth_training_02.jpg','Large batch orientation — Muddapura, 23 Feb 2026')">
+        <img src="assets/samarth-gallery/samarth_training_02.jpg" alt="Large batch orientation" loading="lazy" />
+        <div class="gallery-caption">Large Batch Orientation — 23 Feb 2026</div>
+      </div>
+      <div class="gallery-item" data-cat="training" onclick="openLightbox('assets/samarth-gallery/samarth_training_03.jpg','Practical session at training centre')">
+        <img src="assets/samarth-gallery/samarth_training_03.jpg" alt="Practical session" loading="lazy" />
+        <div class="gallery-caption">Practical Session — Training Centre</div>
+      </div>
+
+      <!-- Sewing Work -->
+      <div class="gallery-item" data-cat="sewing" onclick="openLightbox('assets/samarth-gallery/samarth_sewing_01.jpg','Women working on sewing machines — Muddapura Training Centre')">
+        <img src="assets/samarth-gallery/samarth_sewing_01.jpg" alt="Women sewing" loading="lazy" />
+        <div class="gallery-caption">Sewing Work in Progress — Muddapura</div>
+      </div>
+      <div class="gallery-item" data-cat="sewing" onclick="openLightbox('assets/samarth-gallery/samarth_sewing_02.jpg','Active sewing session — Muddapura, 27 May 2026')">
+        <img src="assets/samarth-gallery/samarth_sewing_02.jpg" alt="Sewing session" loading="lazy" />
+        <div class="gallery-caption">Active Sewing Session — 27 May 2026</div>
+      </div>
+      <div class="gallery-item" data-cat="sewing" onclick="openLightbox('assets/samarth-gallery/samarth_sewing_03.jpg','Garment stitching work — Muddapura, 28 May 2026')">
+        <img src="assets/samarth-gallery/samarth_sewing_03.jpg" alt="Garment stitching" loading="lazy" />
+        <div class="gallery-caption">Garment Stitching — 28 May 2026</div>
+      </div>
+      <div class="gallery-item" data-cat="sewing" onclick="openLightbox('assets/samarth-gallery/samarth_sewing_04.jpg','Women tailors at work — Muddapura, 28 May 2026')">
+        <img src="assets/samarth-gallery/samarth_sewing_04.jpg" alt="Tailors at work" loading="lazy" />
+        <div class="gallery-caption">Tailors at Work — 28 May 2026</div>
+      </div>
+      <div class="gallery-item" data-cat="sewing" onclick="openLightbox('assets/samarth-gallery/samarth_sewing_05.jpg','Detailed sewing work — Muddapura Training Centre')">
+        <img src="assets/samarth-gallery/samarth_sewing_05.jpg" alt="Detailed sewing" loading="lazy" />
+        <div class="gallery-caption">Detailed Sewing Work — Muddapura</div>
+      </div>
+      <div class="gallery-item" data-cat="sewing" onclick="openLightbox('assets/samarth-gallery/samarth_sewing_06.jpg','Production session — Muddapura, 01 June 2026')">
+        <img src="assets/samarth-gallery/samarth_sewing_06.jpg" alt="Production session" loading="lazy" />
+        <div class="gallery-caption">Production Session — 01 Jun 2026</div>
+      </div>
+      <div class="gallery-item" data-cat="sewing" onclick="openLightbox('assets/samarth-gallery/samarth_sewing_07.jpg','Women tailors working — Muddapura, 30 May 2026')">
+        <img src="assets/samarth-gallery/samarth_sewing_07.jpg" alt="Women tailors" loading="lazy" />
+        <div class="gallery-caption">Women Tailors — 30 May 2026</div>
+      </div>
+      <div class="gallery-item" data-cat="sewing" onclick="openLightbox('assets/samarth-gallery/samarth_sewing_08.jpg','Sewing machine work — Muddapura, 30 May 2026')">
+        <img src="assets/samarth-gallery/samarth_sewing_08.jpg" alt="Sewing machine work" loading="lazy" />
+        <div class="gallery-caption">Machine Work — 30 May 2026</div>
+      </div>
+      <div class="gallery-item" data-cat="sewing" onclick="openLightbox('assets/samarth-gallery/samarth_sewing_09.jpg','Training work at Kampli centre — 01 June 2026')">
+        <img src="assets/samarth-gallery/samarth_sewing_09.jpg" alt="Kampli training" loading="lazy" />
+        <div class="gallery-caption">Kampli Training Centre — 01 Jun 2026</div>
+      </div>
+      <div class="gallery-item" data-cat="sewing" onclick="openLightbox('assets/samarth-gallery/samarth_sewing_10.jpg','Garment production — Muddapura, 01 June 2026')">
+        <img src="assets/samarth-gallery/samarth_sewing_10.jpg" alt="Garment production" loading="lazy" />
+        <div class="gallery-caption">Garment Production — 01 Jun 2026</div>
+      </div>
+      <div class="gallery-item" data-cat="sewing" onclick="openLightbox('assets/samarth-gallery/samarth_sewing_11.jpg','Focus work session — Muddapura Training Centre')">
+        <img src="assets/samarth-gallery/samarth_sewing_11.jpg" alt="Focus work session" loading="lazy" />
+        <div class="gallery-caption">Focus Session — Muddapura Centre</div>
+      </div>
+      <div class="gallery-item" data-cat="sewing" onclick="openLightbox('assets/samarth-gallery/samarth_sewing_12.jpg','Fabric cutting work — Muddapura, 01 June 2026')">
+        <img src="assets/samarth-gallery/samarth_sewing_12.jpg" alt="Fabric cutting" loading="lazy" />
+        <div class="gallery-caption">Fabric Cutting — 01 Jun 2026</div>
+      </div>
+
+      <!-- Certificate Distribution -->
+      <div class="gallery-item" data-cat="certificate" onclick="openLightbox('assets/samarth-gallery/samarth_certificate_01.jpg','Certificate distribution ceremony — Kampli, 29 May 2026')">
+        <img src="assets/samarth-gallery/samarth_certificate_01.jpg" alt="Certificate distribution" loading="lazy" />
+        <div class="gallery-caption">Certificate Distribution — Kampli, 29 May 2026</div>
+      </div>
+      <div class="gallery-item" data-cat="certificate" onclick="openLightbox('assets/samarth-gallery/samarth_certificate_02.jpg','Graduates with certificates — Kampli, 29 May 2026')">
+        <img src="assets/samarth-gallery/samarth_certificate_02.jpg" alt="Graduates with certificates" loading="lazy" />
+        <div class="gallery-caption">Proud Graduates — Kampli, 29 May 2026</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div id="lightbox" role="dialog" aria-modal="true" aria-label="Image lightbox">
+  <button id="lightbox-close" onclick="closeLightbox()" aria-label="Close lightbox">&#x2715;</button>
+  <img id="lightbox-img" src="" alt="" />
+  <p id="lightbox-caption"></p>
+</div>
+
+<!-- IMPACT -->
+<section id="impact" style="background:var(--off-white);">
+  <div class="container">
+    <div class="section-intro">
+      <span class="section-tag">Our Reach</span>
+      <h2 class="section-heading">Project Impact</h2>
+      <p class="section-subheading">Measurable outcomes from the PM Samarth Tailoring Programme at Muddapura.</p>
+    </div>
+    <div class="impact-grid">
+      <div class="impact-card"><div class="impact-card-icon">🧵</div><div class="impact-card-num">100+</div><div class="impact-card-label">Women Trained</div><p>Rural women from Muddapura, Kampli, and surrounding villages trained and certified across multiple batches.</p></div>
+      <div class="impact-card"><div class="impact-card-icon">🎓</div><div class="impact-card-num">3</div><div class="impact-card-label">Training Batches</div><p>Multiple sequential batches conducted, ensuring continuous access to training throughout the year.</p></div>
+      <div class="impact-card"><div class="impact-card-icon">💰</div><div class="impact-card-num">&#x20B9;0</div><div class="impact-card-label">Cost to Participants</div><p>Completely free training, tools, and certification — removing all financial barriers for beneficiaries.</p></div>
+      <div class="impact-card"><div class="impact-card-icon">📍</div><div class="impact-card-num">Ballari</div><div class="impact-card-label">District, Karnataka</div><p>Training centre at Muddapura No.10, serving women from across Ballari District.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATION -->
+<section id="location">
+  <div class="container">
+    <div class="section-intro">
+      <span class="section-tag">Where We Operate</span>
+      <h2 class="section-heading">Training Centre Location</h2>
+      <p class="section-subheading">The PM Samarth training centre is located at Muddapura No.10, Sh 29, Ballari District, Karnataka — 583132.</p>
+    </div>
+    <div style="border-radius:var(--radius);overflow:hidden;box-shadow:var(--card-shadow);margin-top:2rem;">
+      <iframe title="Muddapura Training Centre" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.8!2d76.6066!3d15.3961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb7d5e8a1b2c0d1%3A0x0!2sMuddapura%2C%20Karnataka%20583132!5e0!3m2!1sen!2sin!4v1" width="100%" height="400" style="border:0;display:block;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div style="margin-top:1.5rem;display:flex;gap:2rem;flex-wrap:wrap;">
+      <div style="display:flex;align-items:center;gap:0.5rem;color:var(--text-mid);">📍 <strong>Muddapura No.10, Karnataka 583132</strong></div>
+      <div style="display:flex;align-items:center;gap:0.5rem;color:var(--text-mid);">🌐 Lat 15.3961° N &nbsp;|&nbsp; Long 76.6088° E</div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" style="background:var(--off-white);">
+  <div class="container">
+    <div class="section-intro">
+      <span class="section-tag">Get in Touch</span>
+      <h2 class="section-heading">Contact &amp; Enrolment</h2>
+      <p class="section-subheading">Interested in enrolling or partnering with us? Reach out to the PCDF Trust team.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="contact-item"><div class="contact-icon">🏢</div><div><strong>Organisation</strong><p>Progressive Community &amp; Development Foundation (PCDF) Trust</p></div></div>
+        <div class="contact-item"><div class="contact-icon">📍</div><div><strong>Training Centre</strong><p>Muddapura No.10, Sh 29,<br />Ballari District, Karnataka — 583132</p></div></div>
+        <div class="contact-item"><div class="contact-icon">📋</div><div><strong>Scheme</strong><p>PM Samarth — Ministry of Textiles, Government of India</p></div></div>
+      </div>
+      <div class="contact-form-wrap">
+        <form class="contact-form" onsubmit="handleContactForm(event)">
+          <div class="form-group"><label for="cf-name">Your Name</label><input type="text" id="cf-name" placeholder="Full name" required /></div>
+          <div class="form-group"><label for="cf-phone">Mobile Number</label><input type="tel" id="cf-phone" placeholder="10-digit mobile number" required /></div>
+          <div class="form-group"><label for="cf-msg">Message / Enquiry</label><textarea id="cf-msg" rows="4" placeholder="How can we help you?"></textarea></div>
+          <button type="submit" class="btn btn-primary" style="width:100%;">📩 Send Enquiry</button>
+          <div id="cf-success" style="display:none;margin-top:1rem;padding:0.75rem 1rem;background:#fce4ec;border-radius:8px;color:#880e4f;font-weight:600;">✅ Thank you! We will get back to you shortly.</div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OTHER PROJECTS BANNER -->
+<section style="background:linear-gradient(135deg,#1a6b2f,#2e7d32);padding:4rem 0;text-align:center;">
+  <div class="container">
+    <h2 style="color:#fff;margin-bottom:0.75rem;">Also Explore Our Other Projects</h2>
+    <p style="color:#a5d6a7;margin-bottom:2rem;">PCDF Trust runs multiple community development initiatives across Karnataka.</p>
+    <a href="awd-project.html" class="btn btn-outline" style="border-color:#fff;color:#fff;">🌾 AWD — Alternate Wetting &amp; Drying Project</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container footer-grid">
+    <div class="footer-col footer-about">
+      <div class="footer-brand"><span>🧵</span><span>PM Samarth — PCDF Trust</span></div>
+      <p>Empowering women in rural Karnataka through free vocational sewing and tailoring training under the Government of India PM Samarth Scheme.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul class="footer-links">
+        <li><a href="#overview">Project Overview</a></li>
+        <li><a href="#objectives">Objectives</a></li>
+        <li><a href="#programme">Programme Details</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#impact">Impact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>PCDF Trust Projects</h4>
+      <ul class="footer-links">
+        <li><a href="awd-project.html">AWD — Paddy Water Saving</a></li>
+        <li><a href="samarth-project.html">PM Samarth — Tailor Training</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>About PCDF Trust</h4>
+      <ul class="footer-links">
+        <li><a href="#">About the Trust</a></li>
+        <li><a href="#">Our Projects</a></li>
+        <li><a href="#">Field Teams</a></li>
+        <li><a href="#contact">Get in Touch</a></li>
+      </ul>
+    </div>
+  </div>
+  <hr class="footer-divider" />
+  <div class="footer-bottom container">
+    <span>© 2026 PCDF Trust — PM Samarth Project. All rights reserved.</span>
+    <div class="sdg-badges">
+      <span class="sdg-badge">SDG 4</span>
+      <span class="sdg-badge">SDG 5</span>
+      <span class="sdg-badge">SDG 8</span>
+      <span class="sdg-badge">SDG 10</span>
+    </div>
+    <span>Built for women empowerment 🧵</span>
+  </div>
+</footer>
+
+<button id="back-to-top" title="Back to top" aria-label="Back to top">↑</button>
+<script src="js/main.js"></script>
+<script>
+function openLightbox(src,caption){
+  document.getElementById('lightbox-img').src=src;
+  document.getElementById('lightbox-caption').textContent=caption;
+  document.getElementById('lightbox').classList.add('open');
+  document.body.style.overflow='hidden';
+}
+function closeLightbox(){
+  document.getElementById('lightbox').classList.remove('open');
+  document.body.style.overflow='';
+}
+document.getElementById('lightbox').addEventListener('click',function(e){if(e.target===this)closeLightbox();});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')closeLightbox();});
+function handleContactForm(e){
+  /* ── Gallery Filter ── */
+  function filterGallery(cat, btn) {
+    document.querySelectorAll('.gallery-filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    document.querySelectorAll('#main-gallery .gallery-item').forEach(item => {
+      if (cat === 'all' || item.dataset.cat === cat) {
+        item.classList.remove('hidden');
+      } else {
+        item.classList.add('hidden');
+      }
+    });
+  }
+
+  e.preventDefault();
+  document.getElementById('cf-success').style.display='block';
+  e.target.reset();
+}
+</script>
+</body>
+</html>
