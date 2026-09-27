@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Karnataka Skill Development Corporation | PCDF Trust</title>
+  <meta name="description" content="PCDF Trust skill development programme in partnership with Karnataka Skill Development Corporation, supporting rural communities through practical vocational training." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    :root {
+      --ksdc-dark: #00695c;
+      --ksdc-mid: #00897b;
+      --ksdc-light: #e0f2f1;
+    }
+    #hero { background: linear-gradient(135deg, #004d40, #00796b 55%, #26a69a); }
+    #hero .hero-badge { background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.35); }
+    .section-tag, .obj-icon, .highlight-icon { background: var(--ksdc-light); color: var(--ksdc-dark); }
+    .section-heading { color: var(--ksdc-dark); }
+    .hero-stat-num { color: #b2dfdb; }
+    .overview-img-badge { background: linear-gradient(135deg, var(--ksdc-dark), var(--ksdc-mid)); }
+    .obj-card { border-left-color: #26a69a; }
+    .obj-card:hover { border-left-color: var(--ksdc-dark); }
+    .step-number { background: linear-gradient(135deg, var(--ksdc-dark), var(--ksdc-mid)); }
+    .ksdc-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
+    .ksdc-card { background: #fff; border: 1px solid #b2dfdb; border-radius: var(--radius); padding: 1.75rem; box-shadow: var(--card-shadow); }
+    .ksdc-card h3 { color: var(--ksdc-dark); margin-bottom: 0.5rem; }
+    .ksdc-card p { color: var(--text-mid); font-size: 0.9rem; }
+    .ksdc-icon { font-size: 2rem; margin-bottom: 0.75rem; display: block; }
+    .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.25rem; margin-top: 2rem; }
+    .gallery-grid img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: var(--radius); box-shadow: var(--card-shadow); transition: transform 0.3s ease; }
+    .gallery-grid img:hover { transform: translateY(-4px); }
+    .back-link { display: inline-flex; color: #fff; margin-bottom: 1.5rem; opacity: 0.9; }
+    .back-link:hover { color: #fff; opacity: 1; }
+    footer { background: #003c36; }
+    @media (max-width: 700px) { .ksdc-grid, .gallery-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container navbar-inner">
+      <a href="index.html" class="navbar-brand">
+        <div class="brand-logo">🎓</div>
+        <div class="brand-text"><span class="brand-name">KSDC Project</span><span class="brand-sub">PCDF Trust</span></div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Dashboard</a></li>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#programme">Programme</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="hamburger" role="button" aria-label="Toggle menu"><span></span><span></span><span></span></div>
+    </div>
+  </nav>
+
+  <div class="mobile-nav" aria-label="Mobile navigation">
+    <ul>
+      <li><a href="index.html">Dashboard</a></li>
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#programme">Programme</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <section id="hero">
+    <div class="hero-overlay-pattern"></div>
+    <div class="container">
+      <div class="hero-content">
+        <a href="index.html" class="back-link">← Back to PCDF Trust Projects</a>
+        <div class="hero-badge">🎓 PCDF Trust &nbsp;|&nbsp; Skill Development Initiative</div>
+        <h1 class="hero-title" style="font-size:clamp(1.8rem,4.5vw,3.5rem);">Karnataka Skill Development<br /><span>Corporation</span></h1>
+        <p class="hero-tagline">"Skills for Today, Opportunities for Tomorrow."</p>
+        <p class="hero-desc">A practical vocational training initiative helping rural communities build confidence, employable skills, and pathways to sustainable livelihoods.</p>
+        <div class="hero-buttons"><a href="#overview" class="btn btn-primary">🎓 Explore the Programme</a><a href="#gallery" class="btn btn-outline">📷 View Training Gallery</a></div>
+        <div class="hero-stats">
+          <div class="hero-stat-item"><span class="hero-stat-num">KSDC</span><span class="hero-stat-label">Programme Partner</span></div>
+          <div class="hero-stat-item"><span class="hero-stat-num">3</span><span class="hero-stat-label">Training Areas</span></div>
+          <div class="hero-stat-item"><span class="hero-stat-num">Free</span><span class="hero-stat-label">Skills Training</span></div>
+          <div class="hero-stat-item"><span class="hero-stat-num">KA</span><span class="hero-stat-label">Karnataka Focus</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="scrolling-gallery"><div class="scrolling-gallery-track">
+      <img src="assets/ksdc-gallery/ksdc_karatagi_group_01.jpg" alt="KSDC training group at Karatagi" />
+      <img src="assets/ksdc-gallery/ksdc_yaradona_sewing_01.jpg" alt="Vocational sewing training at Yaradona" />
+      <img src="assets/ksdc-gallery/ksdc_karatagi_celebration_01.jpg" alt="KSDC programme celebration" />
+      <img src="assets/ksdc-gallery/ksdc_yaradona_theory_01.jpg" alt="KSDC classroom theory session" />
+      <img src="assets/ksdc-gallery/ksdc_karatagi_sewing_01.jpg" alt="Sewing skills training at Karatagi" />
+      <img src="assets/ksdc-gallery/ksdc_yaradona_sewing_02.jpg" alt="Practical sewing training at Yaradona" />
+    </div></div>
+  </section>
+
+  <section id="overview">
+    <div class="container"><div class="overview-grid">
+      <div class="overview-image"><img class="overview-img-main" src="assets/ksdc-gallery/ksdc_yaradona_theory_01.jpg" alt="KSDC theory training session" loading="lazy" /><div class="overview-img-badge"><span>🎓 KSDC</span>Skill Development<br />for Rural Communities</div></div>
+      <div class="overview-text"><span class="section-tag">About the Project</span><h2 class="section-heading">Building Skills, Confidence, and Livelihoods</h2><p>The Karnataka Skill Development Corporation programme connects rural communities with practical training designed around local opportunity and participant interest.</p><p>PCDF Trust supports community mobilisation, training coordination, field-level engagement, and documentation so that participants can turn new skills into greater independence and livelihood options.</p><div class="overview-highlights"><div class="highlight-item"><span class="highlight-icon">🎓</span> Practical Skills</div><div class="highlight-item"><span class="highlight-icon">🤝</span> Community Support</div><div class="highlight-item"><span class="highlight-icon">💼</span> Livelihood Pathways</div></div></div>
+    </div></div>
+  </section>
+
+  <section id="programme" style="background:var(--ksdc-light);"><div class="container"><div class="section-intro"><span class="section-tag">Programme Focus</span><h2 class="section-heading">Training That Leads Somewhere</h2><p class="section-subheading">The programme combines hands-on learning with community participation and practical support.</p></div><div class="ksdc-grid"><div class="ksdc-card"><span class="ksdc-icon">🧵</span><h3>Sewing and Tailoring</h3><p>Hands-on sessions introduce participants to sewing practice, garment work, and the confidence to pursue income-generating activity.</p></div><div class="ksdc-card"><span class="ksdc-icon">📚</span><h3>Theory and Foundations</h3><p>Structured classroom sessions build the knowledge, safety awareness, and basic concepts that support practical training.</p></div><div class="ksdc-card"><span class="ksdc-icon">👥</span><h3>Community-Based Learning</h3><p>Local engagement helps participants learn together, share experience, and stay connected to support beyond the classroom.</p></div></div></div></section>
+
+  <section id="gallery"><div class="container"><div class="section-intro"><span class="section-tag">Field Gallery</span><h2 class="section-heading">Learning in Action</h2><p class="section-subheading">Photographs from KSDC-supported training activities at Karatagi and Yaradona.</p></div><div class="gallery-grid"><img src="assets/ksdc-gallery/ksdc_karatagi_group_01.jpg" alt="KSDC training group at Karatagi" loading="lazy" /><img src="assets/ksdc-gallery/ksdc_karatagi_sewing_01.jpg" alt="Sewing training at Karatagi" loading="lazy" /><img src="assets/ksdc-gallery/ksdc_karatagi_celebration_01.jpg" alt="KSDC celebration at Karatagi" loading="lazy" /><img src="assets/ksdc-gallery/ksdc_yaradona_theory_01.jpg" alt="Theory class at Yaradona" loading="lazy" /><img src="assets/ksdc-gallery/ksdc_yaradona_sewing_01.jpg" alt="Sewing class at Yaradona" loading="lazy" /><img src="assets/ksdc-gallery/ksdc_yaradona_sewing_02.jpg" alt="Practical sewing session at Yaradona" loading="lazy" /></div></div></section>
+
+  <section id="contact" style="background:var(--off-white);"><div class="container"><div class="section-intro"><span class="section-tag">Get in Touch</span><h2 class="section-heading">Partner With the Programme</h2><p class="section-subheading">Contact PCDF Trust for programme enquiries, participant coordination, or collaboration opportunities.</p></div><div class="contact-layout"><div class="contact-info"><h3>PCDF Trust</h3><p>We welcome enquiries from communities, training partners, researchers, and organisations working to expand access to meaningful skills and livelihoods.</p><div class="contact-details"><div class="contact-item"><div class="contact-icon">📞</div><div><strong>Mobile Number</strong><br /><a href="tel:+919663717584">96637 17584</a></div></div><div class="contact-item"><div class="contact-icon">📧</div><div><strong>Email</strong><br /><a href="mailto:info@pcdftrust.org">info@pcdftrust.org</a></div></div><div class="contact-item"><div class="contact-icon">📍</div><div><strong>Region</strong><br /><span>Karnataka, India</span></div></div></div></div><div class="contact-form"><h3>Send an Enquiry</h3><form id="contact-form"><div class="form-group"><label for="name">Full Name *</label><input type="text" id="name" name="name" placeholder="Your name" required /></div><div class="form-group"><label for="email">Email Address *</label><input type="email" id="email" name="email" placeholder="you@email.com" required /></div><div class="form-group"><label for="message">Message *</label><textarea id="message" name="message" rows="5" placeholder="Tell us how we can help..." required></textarea></div><button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">✉️ Send Message</button><div id="form-success" class="form-success">✅ Thank you! Your enquiry has been received.</div></form></div></div></div></section>
+
+  <footer><div class="container"><div class="footer-grid"><div class="footer-brand"><h3>🎓 KSDC Project — PCDF Trust</h3><p>Supporting rural communities through practical skill development, training coordination, and livelihood opportunities.</p></div><div class="footer-col"><h4>Projects</h4><ul class="footer-links"><li><a href="index.html">PCDF Trust Dashboard</a></li><li><a href="awd-project.html">🌾 AWD Project</a></li><li><a href="samarth-project.html">🧵 PM Samarth</a></li><li><a href="fish-project.html">🐟 NFDB Project</a></li></ul></div><div class="footer-col"><h4>Contact</h4><ul class="footer-links"><li><a href="tel:+919663717584">96637 17584</a></li><li><a href="mailto:info@pcdftrust.org">info@pcdftrust.org</a></li><li><a href="#contact">Get in Touch</a></li></ul></div></div><hr class="footer-divider" /><div class="footer-bottom"><span>© 2026 PCDF Trust — KSDC Project. All rights reserved.</span><span>Building skills across Karnataka 🎓</span></div></div></footer>
+  <button id="back-to-top" title="Back to top" aria-label="Back to top">↑</button>
+  <script src="js/main.js"></script>
+</body>
+</html>

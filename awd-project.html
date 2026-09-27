@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -32,6 +32,7 @@
     </a>
 
     <ul class="nav-links">
+      <li><a href="index.html" style="font-weight:700;color:var(--green-dark);">← Dashboard</a></li>
       <li><a href="#overview">Overview</a></li>
       <li><a href="#objectives">Objectives</a></li>
       <li><a href="#how-awd">How AWD Works</a></li>
@@ -39,6 +40,7 @@
       <li><a href="#farmers">Farmers</a></li>
       <li><a href="#locations">Locations</a></li>
       <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#awd-dataset" style="color:#2e7d32;font-weight:700;">Field Registry (4,153)</a></li>
       <li><a href="#field-data">Field Data</a></li>
       <li><a href="#impact">Impact</a></li>
       <li><a href="#reports">Reports</a></li>
@@ -61,7 +63,8 @@
     <li><a href="#farmers">Farmers</a></li>
     <li><a href="#locations">Locations</a></li>
     <li><a href="#gallery">Gallery</a></li>
-    <li><a href="#field-data">Field Data</a></li>
+    <li><a href="#awd-dataset" style="color:#2e7d32;font-weight:700;">Field Registry (4,153)</a></li>
+      <li><a href="#field-data">Field Data</a></li>
     <li><a href="#impact">Impact</a></li>
     <li><a href="#reports">Reports</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -110,20 +113,20 @@
 
       <div class="hero-stats">
         <div class="hero-stat-item">
-          <span class="hero-stat-num">150+</span>
-          <span class="hero-stat-label">Farmers Trained</span>
+          <span class="hero-stat-num">4,150+</span>
+          <span class="hero-stat-label">Farmers Enrolled</span>
         </div>
         <div class="hero-stat-item">
-          <span class="hero-stat-num">30%</span>
-          <span class="hero-stat-label">Water Saved (avg)</span>
+          <span class="hero-stat-num">24,700+</span>
+          <span class="hero-stat-label">Acres Covered</span>
         </div>
         <div class="hero-stat-item">
-          <span class="hero-stat-num">200+</span>
-          <span class="hero-stat-label">Hectares Covered</span>
+          <span class="hero-stat-num">9,140+</span>
+          <span class="hero-stat-label">AWD Pipes Active</span>
         </div>
         <div class="hero-stat-item">
-          <span class="hero-stat-num">12</span>
-          <span class="hero-stat-label">Project Villages</span>
+          <span class="hero-stat-num">127</span>
+          <span class="hero-stat-label">Villages Across KT</span>
         </div>
       </div>
 
@@ -1211,6 +1214,749 @@
 <!-- ════════════════════════════════════
      SECTION 9 — FIELD DATA
 ════════════════════════════════════ -->
+
+<!-- ════════════════════════════════════
+     AWD FIELD REGISTRY & VERIFICATION DATA (LIVE DATASET)
+════════════════════════════════════ -->
+<section id="awd-dataset" style="background:#f4f9f4; padding: 5rem 0; border-top:1px solid #e0ede0; border-bottom:1px solid #e0ede0;">
+  <div class="container">
+    <div class="section-intro" style="text-align:center; max-width:850px; margin:0 auto 3rem;">
+      <span class="section-tag" style="background:#e8f5e9; color:#2e7d32; font-weight:700;">🌿 Official Project Registry</span>
+      <h2 class="section-heading" style="color:#1b5e20;">AWD Field Operations &amp; Farmer Registry</h2>
+      <p style="color:#555; font-size:1.05rem; line-height:1.6;">
+        Live field data executed in partnership with <strong>Core CarbonX Sols Pvt Ltd</strong> &amp; <strong>Aurigraph Co</strong>.
+        Covering <strong>5,616 plot records</strong>, <strong>4,153 registered paddy farmers</strong>, and <strong>24,708+ acres</strong> across Karnataka.
+      </p>
+
+      <!-- Key Stat Badges -->
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(180px, 1fr)); gap:1.2rem; margin-top:2.5rem;">
+        <div style="background:#fff; border-radius:12px; padding:1.2rem; box-shadow:0 4px 15px rgba(0,0,0,0.05); border-left:4px solid #2e7d32;">
+          <div style="font-size:1.8rem; font-weight:800; color:#2e7d32;">24,708+</div>
+          <div style="font-size:0.85rem; color:#666; font-weight:600;">Total Acres Enrolled</div>
+        </div>
+        <div style="background:#fff; border-radius:12px; padding:1.2rem; box-shadow:0 4px 15px rgba(0,0,0,0.05); border-left:4px solid #1976d2;">
+          <div style="font-size:1.8rem; font-weight:800; color:#1976d2;">4,153</div>
+          <div style="font-size:0.85rem; color:#666; font-weight:600;">Registered Farmers</div>
+        </div>
+        <div style="background:#fff; border-radius:12px; padding:1.2rem; box-shadow:0 4px 15px rgba(0,0,0,0.05); border-left:4px solid #f57c00;">
+          <div style="font-size:1.8rem; font-weight:800; color:#f57c00;">9,141</div>
+          <div style="font-size:0.85rem; color:#666; font-weight:600;">AWD Pani Pipes Active</div>
+        </div>
+        <div style="background:#fff; border-radius:12px; padding:1.2rem; box-shadow:0 4px 15px rgba(0,0,0,0.05); border-left:4px solid #7b1fa2;">
+          <div style="font-size:1.8rem; font-weight:800; color:#7b1fa2;">127</div>
+          <div style="font-size:0.85rem; color:#666; font-weight:600;">Villages Covered</div>
+        </div>
+      </div>
+
+      </div>
+
+    <!-- Data Tabs Nav -->
+    <div style="display:flex; justify-content:center; gap:0.75rem; margin-bottom:2rem; flex-wrap:wrap;">
+      <button onclick="switchAwdTab('tab-villages', this)" id="btn-tab-villages" style="padding:0.6rem 1.4rem; border-radius:50px; font-weight:700; border:2px solid #2e7d32; background:#2e7d32; color:#fff; cursor:pointer; font-size:0.9rem;">
+        🏘️ Top 20 Villages by Area
+      </button>
+      <button onclick="switchAwdTab('tab-coordinators', this)" id="btn-tab-coordinators" style="padding:0.6rem 1.4rem; border-radius:50px; font-weight:700; border:2px solid #2e7d32; background:#fff; color:#2e7d32; cursor:pointer; font-size:0.9rem;">
+        👨‍💼 Field Coordinators (27 Active)
+      </button>
+      <button onclick="switchAwdTab('tab-farmers', this)" id="btn-tab-farmers" style="padding:0.6rem 1.4rem; border-radius:50px; font-weight:700; border:2px solid #2e7d32; background:#fff; color:#2e7d32; cursor:pointer; font-size:0.9rem;">
+        📋 Verified Farmer Sample (4,153 Total)
+      </button>
+      <button onclick="switchAwdTab('tab-presentation', this)" id="btn-tab-presentation" style="padding:0.6rem 1.4rem; border-radius:50px; font-weight:700; border:2px solid #2e7d32; background:#fff; color:#2e7d32; cursor:pointer; font-size:0.9rem;">
+        🖼️ AWD Method &amp; Presentation Slides
+      </button>
+    </div>
+
+    <!-- Tab 1: Top Villages -->
+    <div id="tab-villages" class="awd-tab-panel" style="display:block;">
+      <div style="background:#fff; border-radius:16px; box-shadow:0 5px 25px rgba(0,0,0,0.06); overflow:hidden; border:1px solid #e2ede2;">
+        <div style="background:linear-gradient(135deg, #2e7d32, #388e3c); color:#fff; padding:1.2rem 1.8rem; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem;">
+          <div>
+            <h3 style="margin:0; font-size:1.15rem; font-weight:700; color:#fff;">Leading Paddy Clusters by AWD Coverage</h3>
+            <p style="margin:0.2rem 0 0; font-size:0.85rem; opacity:0.9;">Ranked by total acreage enrolled in Alternate Wetting and Drying practice</p>
+          </div>
+          <span style="background:rgba(255,255,255,0.2); padding:0.3rem 0.8rem; border-radius:20px; font-size:0.8rem; font-weight:600;">127 Villages Total</span>
+        </div>
+        <div style="overflow-x:auto;">
+          <table class="data-table" style="width:100%; margin:0;">
+            <thead>
+              <tr style="background:#f1f8e9;">
+                <th style="color:#2e7d32;">Rank</th>
+                <th style="color:#2e7d32;">Village Name</th>
+                <th style="color:#2e7d32;">Registered Farmers</th>
+                <th style="color:#2e7d32;">AWD Pipes Installed</th>
+                <th style="color:#2e7d32;">Total Enrolled Area (Acres)</th>
+                <th style="color:#2e7d32;">Total Field Records</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+      <td><strong>#1</strong></td>
+      <td><strong>MUKUNDA</strong></td>
+      <td>276</td>
+      <td>334</td>
+      <td><span style="color:#2e7d32;font-weight:700;">1,390.71</span></td>
+      <td>296</td>
+    </tr><tr>
+      <td><strong>#2</strong></td>
+      <td><strong>DEVASAMUDRA</strong></td>
+      <td>158</td>
+      <td>506</td>
+      <td><span style="color:#2e7d32;font-weight:700;">1,154.01</span></td>
+      <td>160</td>
+    </tr><tr>
+      <td><strong>#3</strong></td>
+      <td><strong>EMMINGANURU-phase4</strong></td>
+      <td>147</td>
+      <td>357</td>
+      <td><span style="color:#2e7d32;font-weight:700;">1,143.33</span></td>
+      <td>150</td>
+    </tr><tr>
+      <td><strong>#4</strong></td>
+      <td><strong>JALIHAL</strong></td>
+      <td>153</td>
+      <td>262</td>
+      <td><span style="color:#2e7d32;font-weight:700;">718.38</span></td>
+      <td>158</td>
+    </tr><tr>
+      <td><strong>#5</strong></td>
+      <td><strong>HANCHINAL</strong></td>
+      <td>135</td>
+      <td>313</td>
+      <td><span style="color:#2e7d32;font-weight:700;">718.28</span></td>
+      <td>157</td>
+    </tr><tr>
+      <td><strong>#6</strong></td>
+      <td><strong>EMMINGANURU-phase2</strong></td>
+      <td>153</td>
+      <td>330</td>
+      <td><span style="color:#2e7d32;font-weight:700;">663.14</span></td>
+      <td>156</td>
+    </tr><tr>
+      <td><strong>#7</strong></td>
+      <td><strong>SOMLAPUR</strong></td>
+      <td>66</td>
+      <td>140</td>
+      <td><span style="color:#2e7d32;font-weight:700;">595.87</span></td>
+      <td>72</td>
+    </tr><tr>
+      <td><strong>#8</strong></td>
+      <td><strong>SINGAPUR</strong></td>
+      <td>58</td>
+      <td>114</td>
+      <td><span style="color:#2e7d32;font-weight:700;">576.81</span></td>
+      <td>62</td>
+    </tr><tr>
+      <td><strong>#9</strong></td>
+      <td><strong>ROUDKUNDA</strong></td>
+      <td>173</td>
+      <td>222</td>
+      <td><span style="color:#2e7d32;font-weight:700;">563.35</span></td>
+      <td>187</td>
+    </tr><tr>
+      <td><strong>#10</strong></td>
+      <td><strong>VIRUPAPURA-phase2</strong></td>
+      <td>109</td>
+      <td>154</td>
+      <td><span style="color:#2e7d32;font-weight:700;">542.49</span></td>
+      <td>123</td>
+    </tr><tr>
+      <td><strong>#11</strong></td>
+      <td><strong>JAVALAGERA-phase2</strong></td>
+      <td>108</td>
+      <td>137</td>
+      <td><span style="color:#2e7d32;font-weight:700;">521.23</span></td>
+      <td>110</td>
+    </tr><tr>
+      <td><strong>#12</strong></td>
+      <td><strong>GUNJANAHALLI</strong></td>
+      <td>102</td>
+      <td>201</td>
+      <td><span style="color:#2e7d32;font-weight:700;">497.14</span></td>
+      <td>113</td>
+    </tr><tr>
+      <td><strong>#13</strong></td>
+      <td><strong>GANDHINAGAR</strong></td>
+      <td>104</td>
+      <td>225</td>
+      <td><span style="color:#2e7d32;font-weight:700;">494.23</span></td>
+      <td>104</td>
+    </tr><tr>
+      <td><strong>#14</strong></td>
+      <td><strong>GUNJANAHALLI-phase2</strong></td>
+      <td>80</td>
+      <td>245</td>
+      <td><span style="color:#2e7d32;font-weight:700;">479.38</span></td>
+      <td>98</td>
+    </tr><tr>
+      <td><strong>#15</strong></td>
+      <td><strong>JAVALAGERA</strong></td>
+      <td>115</td>
+      <td>166</td>
+      <td><span style="color:#2e7d32;font-weight:700;">463.99</span></td>
+      <td>121</td>
+    </tr><tr>
+      <td><strong>#16</strong></td>
+      <td><strong>EMMINGANURU-phase3</strong></td>
+      <td>146</td>
+      <td>282</td>
+      <td><span style="color:#2e7d32;font-weight:700;">451.22</span></td>
+      <td>155</td>
+    </tr><tr>
+      <td><strong>#17</strong></td>
+      <td><strong>HUDA</strong></td>
+      <td>116</td>
+      <td>159</td>
+      <td><span style="color:#2e7d32;font-weight:700;">432.81</span></td>
+      <td>132</td>
+    </tr><tr>
+      <td><strong>#18</strong></td>
+      <td><strong>BASAPURA</strong></td>
+      <td>122</td>
+      <td>180</td>
+      <td><span style="color:#2e7d32;font-weight:700;">414.12</span></td>
+      <td>136</td>
+    </tr><tr>
+      <td><strong>#19</strong></td>
+      <td><strong>GANDHINAGAR-phase2</strong></td>
+      <td>100</td>
+      <td>190</td>
+      <td><span style="color:#2e7d32;font-weight:700;">412.22</span></td>
+      <td>100</td>
+    </tr><tr>
+      <td><strong>#20</strong></td>
+      <td><strong>GUNJANAHALLI-phase3</strong></td>
+      <td>81</td>
+      <td>152</td>
+      <td><span style="color:#2e7d32;font-weight:700;">393.67</span></td>
+      <td>96</td>
+    </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab 2: Coordinators -->
+    <div id="tab-coordinators" class="awd-tab-panel" style="display:none;">
+      <div style="background:#fff; border-radius:16px; box-shadow:0 5px 25px rgba(0,0,0,0.06); overflow:hidden; border:1px solid #e2ede2;">
+        <div style="background:linear-gradient(135deg, #1976d2, #2196f3); color:#fff; padding:1.2rem 1.8rem;">
+          <h3 style="margin:0; font-size:1.15rem; font-weight:700; color:#fff;">Field Operations &amp; Verification Officers</h3>
+          <p style="margin:0.2rem 0 0; font-size:0.85rem; opacity:0.9;">Core field coordinators overseeing geotagging, farmer training &amp; pani pipe audits</p>
+        </div>
+        <div style="overflow-x:auto;">
+          <table class="data-table" style="width:100%; margin:0;">
+            <thead>
+              <tr style="background:#e3f2fd;">
+                <th style="color:#1565c0;">Rank</th>
+                <th style="color:#1565c0;">Coordinator Name</th>
+                <th style="color:#1565c0;">Farmers Managed</th>
+                <th style="color:#1565c0;">Pani Pipes Monitored</th>
+                <th style="color:#1565c0;">Acreage Supervised</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+      <td><strong>#1</strong></td>
+      <td><strong>Hasneppa</strong></td>
+      <td>782</td>
+      <td>1,261</td>
+      <td><span style="color:#2e7d32;font-weight:700;">3,105.08</span></td>
+    </tr><tr>
+      <td><strong>#2</strong></td>
+      <td><strong>Nagappa K</strong></td>
+      <td>669</td>
+      <td>1,222</td>
+      <td><span style="color:#2e7d32;font-weight:700;">2,664.05</span></td>
+    </tr><tr>
+      <td><strong>#3</strong></td>
+      <td><strong>Manjunath</strong></td>
+      <td>584</td>
+      <td>913</td>
+      <td><span style="color:#2e7d32;font-weight:700;">2,195.82</span></td>
+    </tr><tr>
+      <td><strong>#4</strong></td>
+      <td><strong>T. RAMESH</strong></td>
+      <td>571</td>
+      <td>1,381</td>
+      <td><span style="color:#2e7d32;font-weight:700;">2,879.04</span></td>
+    </tr><tr>
+      <td><strong>#5</strong></td>
+      <td><strong>Rajashekar Reddy</strong></td>
+      <td>489</td>
+      <td>649</td>
+      <td><span style="color:#2e7d32;font-weight:700;">2,055.30</span></td>
+    </tr><tr>
+      <td><strong>#6</strong></td>
+      <td><strong>TUKARAM</strong></td>
+      <td>417</td>
+      <td>634</td>
+      <td><span style="color:#2e7d32;font-weight:700;">1,800.53</span></td>
+    </tr><tr>
+      <td><strong>#7</strong></td>
+      <td><strong>P. MAHESH</strong></td>
+      <td>339</td>
+      <td>556</td>
+      <td><span style="color:#2e7d32;font-weight:700;">1,531.55</span></td>
+    </tr><tr>
+      <td><strong>#8</strong></td>
+      <td><strong>Gangadhar</strong></td>
+      <td>337</td>
+      <td>483</td>
+      <td><span style="color:#2e7d32;font-weight:700;">1,116.08</span></td>
+    </tr><tr>
+      <td><strong>#9</strong></td>
+      <td><strong>Nagaraj</strong></td>
+      <td>287</td>
+      <td>341</td>
+      <td><span style="color:#2e7d32;font-weight:700;">983.97</span></td>
+    </tr><tr>
+      <td><strong>#10</strong></td>
+      <td><strong>Bhimesh</strong></td>
+      <td>284</td>
+      <td>426</td>
+      <td><span style="color:#2e7d32;font-weight:700;">1,489.44</span></td>
+    </tr><tr>
+      <td><strong>#11</strong></td>
+      <td><strong>Mahantesh</strong></td>
+      <td>207</td>
+      <td>291</td>
+      <td><span style="color:#2e7d32;font-weight:700;">1,007.27</span></td>
+    </tr><tr>
+      <td><strong>#12</strong></td>
+      <td><strong>Sheiksavali</strong></td>
+      <td>197</td>
+      <td>230</td>
+      <td><span style="color:#2e7d32;font-weight:700;">1,040.30</span></td>
+    </tr><tr>
+      <td><strong>#13</strong></td>
+      <td><strong>Veeresh</strong></td>
+      <td>136</td>
+      <td>308</td>
+      <td><span style="color:#2e7d32;font-weight:700;">1,597.69</span></td>
+    </tr><tr>
+      <td><strong>#14</strong></td>
+      <td><strong>VISHWANATH</strong></td>
+      <td>86</td>
+      <td>96</td>
+      <td><span style="color:#2e7d32;font-weight:700;">288.15</span></td>
+    </tr><tr>
+      <td><strong>#15</strong></td>
+      <td><strong>MANJUNATH</strong></td>
+      <td>85</td>
+      <td>101</td>
+      <td><span style="color:#2e7d32;font-weight:700;">154.00</span></td>
+    </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab 3: Farmers Sample -->
+    <div id="tab-farmers" class="awd-tab-panel" style="display:none;">
+      <div style="background:#fff; border-radius:16px; box-shadow:0 5px 25px rgba(0,0,0,0.06); overflow:hidden; border:1px solid #e2ede2;">
+        <div style="background:linear-gradient(135deg, #424242, #616161); color:#fff; padding:1.2rem 1.8rem; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem;">
+          <div>
+            <h3 style="margin:0; font-size:1.15rem; font-weight:700; color:#fff;">Farmer Verification Registry Sample</h3>
+            <p style="margin:0.2rem 0 0; font-size:0.85rem; opacity:0.9;">Verified records with Govt IDs, acreage measurements, and field officer sync</p>
+          </div>
+          
+        </div>
+        <div style="overflow-x:auto;">
+          <table class="data-table" style="width:100%; margin:0;">
+            <thead>
+              <tr style="background:#fafafa;">
+                <th>#</th>
+                <th>Farmer Name</th>
+                <th>Govt ID Reference</th>
+                <th>Village</th>
+                <th>Acres</th>
+                <th>Pipes</th>
+                <th>Field Officer</th>
+                <th>Registered Date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+      <td>1</td>
+      <td><strong>Ningappa</strong></td>
+      <td><span style="font-family:monospace;font-size:0.78rem;background:#f1f8e9;padding:2px 6px;border-radius:4px;">366715291544</span></td>
+      <td>JAVALAGERA</td>
+      <td><strong style="color:#2e7d32;">12.65</strong></td>
+      <td><span class="badge-status badge-ok">2 Pipe(s)</span></td>
+      <td>Rajashekar Reddy</td>
+      <td>2024-09-06</td>
+    </tr><tr>
+      <td>2</td>
+      <td><strong>Aayyamma</strong></td>
+      <td><span style="font-family:monospace;font-size:0.78rem;background:#f1f8e9;padding:2px 6px;border-radius:4px;">907754370189</span></td>
+      <td>JAVALAGERA</td>
+      <td><strong style="color:#2e7d32;">4.72</strong></td>
+      <td><span class="badge-status badge-ok">1 Pipe(s)</span></td>
+      <td>Rajashekar Reddy</td>
+      <td>2024-09-06</td>
+    </tr><tr>
+      <td>3</td>
+      <td><strong>Rajeshwari</strong></td>
+      <td><span style="font-family:monospace;font-size:0.78rem;background:#f1f8e9;padding:2px 6px;border-radius:4px;">238772112560</span></td>
+      <td>GINIVARA</td>
+      <td><strong style="color:#2e7d32;">1.75</strong></td>
+      <td><span class="badge-status badge-ok">1 Pipe(s)</span></td>
+      <td>Rajashekar Reddy</td>
+      <td>2024-09-05</td>
+    </tr><tr>
+      <td>4</td>
+      <td><strong>Nethravati</strong></td>
+      <td><span style="font-family:monospace;font-size:0.78rem;background:#f1f8e9;padding:2px 6px;border-radius:4px;">519828647092</span></td>
+      <td>GINIVARA</td>
+      <td><strong style="color:#2e7d32;">1.06</strong></td>
+      <td><span class="badge-status badge-ok">1 Pipe(s)</span></td>
+      <td>Rajashekar Reddy</td>
+      <td>2024-09-05</td>
+    </tr><tr>
+      <td>5</td>
+      <td><strong>Mahadavamma</strong></td>
+      <td><span style="font-family:monospace;font-size:0.78rem;background:#f1f8e9;padding:2px 6px;border-radius:4px;">457804146219</span></td>
+      <td>GINIVARA</td>
+      <td><strong style="color:#2e7d32;">1.99</strong></td>
+      <td><span class="badge-status badge-ok">1 Pipe(s)</span></td>
+      <td>Rajashekar Reddy</td>
+      <td>2024-09-05</td>
+    </tr><tr>
+      <td>6</td>
+      <td><strong>Gadilinga</strong></td>
+      <td><span style="font-family:monospace;font-size:0.78rem;background:#f1f8e9;padding:2px 6px;border-radius:4px;">440943157757</span></td>
+      <td>MUKUNDA</td>
+      <td><strong style="color:#2e7d32;">15.75</strong></td>
+      <td><span class="badge-status badge-ok">4 Pipe(s)</span></td>
+      <td>Nagaraj</td>
+      <td>2024-08-28</td>
+    </tr><tr>
+      <td>7</td>
+      <td><strong>Jathamma</strong></td>
+      <td><span style="font-family:monospace;font-size:0.78rem;background:#f1f8e9;padding:2px 6px;border-radius:4px;">NNJ3760774</span></td>
+      <td>MUKUNDA</td>
+      <td><strong style="color:#2e7d32;">59.83</strong></td>
+      <td><span class="badge-status badge-ok">3 Pipe(s)</span></td>
+      <td>Sheiksavali</td>
+      <td>2024-08-23</td>
+    </tr><tr>
+      <td>8</td>
+      <td><strong>Jafar Sab</strong></td>
+      <td><span style="font-family:monospace;font-size:0.78rem;background:#f1f8e9;padding:2px 6px;border-radius:4px;">554985264044</span></td>
+      <td>MUKUNDA</td>
+      <td><strong style="color:#2e7d32;">1.03</strong></td>
+      <td><span class="badge-status badge-ok">1 Pipe(s)</span></td>
+      <td>Nagaraj</td>
+      <td>2024-08-13</td>
+    </tr><tr>
+      <td>9</td>
+      <td><strong>G Govinda</strong></td>
+      <td><span style="font-family:monospace;font-size:0.78rem;background:#f1f8e9;padding:2px 6px;border-radius:4px;">889801877062</span></td>
+      <td>DHADESUGUR</td>
+      <td><strong style="color:#2e7d32;">31.97</strong></td>
+      <td><span class="badge-status badge-ok">7 Pipe(s)</span></td>
+      <td>Veeresh</td>
+      <td>2024-08-02</td>
+    </tr><tr>
+      <td>10</td>
+      <td><strong>Beerappa</strong></td>
+      <td><span style="font-family:monospace;font-size:0.78rem;background:#f1f8e9;padding:2px 6px;border-radius:4px;">201358413989</span></td>
+      <td>MUKUNDA</td>
+      <td><strong style="color:#2e7d32;">0.00</strong></td>
+      <td><span class="badge-status badge-ok">1 Pipe(s)</span></td>
+      <td>Nagaraj</td>
+      <td>2024-07-30</td>
+    </tr><tr>
+      <td>11</td>
+      <td><strong>Bhadragouda</strong></td>
+      <td><span style="font-family:monospace;font-size:0.78rem;background:#f1f8e9;padding:2px 6px;border-radius:4px;">290803714998</span></td>
+      <td>ARLIGANURU</td>
+      <td><strong style="color:#2e7d32;">3.13</strong></td>
+      <td><span class="badge-status badge-ok">2 Pipe(s)</span></td>
+      <td>P. Mahesh</td>
+      <td>2024-07-24</td>
+    </tr><tr>
+      <td>12</td>
+      <td><strong>Basamma</strong></td>
+      <td><span style="font-family:monospace;font-size:0.78rem;background:#f1f8e9;padding:2px 6px;border-radius:4px;">589588257303</span></td>
+      <td>TURUKATTE</td>
+      <td><strong style="color:#2e7d32;">0.00</strong></td>
+      <td><span class="badge-status badge-ok">1 Pipe(s)</span></td>
+      <td>Rajashekar Reddy</td>
+      <td>2024-07-22</td>
+    </tr><tr>
+      <td>13</td>
+      <td><strong>Basamma</strong></td>
+      <td><span style="font-family:monospace;font-size:0.78rem;background:#f1f8e9;padding:2px 6px;border-radius:4px;">398995187659</span></td>
+      <td>TURUKATTE</td>
+      <td><strong style="color:#2e7d32;">0.00</strong></td>
+      <td><span class="badge-status badge-ok">1 Pipe(s)</span></td>
+      <td>Rajashekar Reddy</td>
+      <td>2024-07-20</td>
+    </tr><tr>
+      <td>14</td>
+      <td><strong>N. Raja Rao</strong></td>
+      <td><span style="font-family:monospace;font-size:0.78rem;background:#f1f8e9;padding:2px 6px;border-radius:4px;">UUB1230614</span></td>
+      <td>SIRUGUPPA</td>
+      <td><strong style="color:#2e7d32;">12.48</strong></td>
+      <td><span class="badge-status badge-ok">3 Pipe(s)</span></td>
+      <td>P. Mahesh</td>
+      <td>2024-07-15</td>
+    </tr><tr>
+      <td>15</td>
+      <td><strong>Gangamma</strong></td>
+      <td><span style="font-family:monospace;font-size:0.78rem;background:#f1f8e9;padding:2px 6px;border-radius:4px;">890080210369</span></td>
+      <td>VIRUPAPURA</td>
+      <td><strong style="color:#2e7d32;">0.00</strong></td>
+      <td><span class="badge-status badge-ok">1 Pipe(s)</span></td>
+      <td>Hasneppa</td>
+      <td>2024-07-15</td>
+    </tr><tr>
+      <td>16</td>
+      <td><strong>Hanumesha</strong></td>
+      <td><span style="font-family:monospace;font-size:0.78rem;background:#f1f8e9;padding:2px 6px;border-radius:4px;">852058759451</span></td>
+      <td>MUKUNDA</td>
+      <td><strong style="color:#2e7d32;">0.00</strong></td>
+      <td><span class="badge-status badge-ok">1 Pipe(s)</span></td>
+      <td>Nagaraj</td>
+      <td>2024-07-13</td>
+    </tr><tr>
+      <td>17</td>
+      <td><strong>Chandramma Desayi</strong></td>
+      <td><span style="font-family:monospace;font-size:0.78rem;background:#f1f8e9;padding:2px 6px;border-radius:4px;">230451227219</span></td>
+      <td>VIRUPAPURA</td>
+      <td><strong style="color:#2e7d32;">0.00</strong></td>
+      <td><span class="badge-status badge-ok">1 Pipe(s)</span></td>
+      <td>Hasneppa</td>
+      <td>2024-07-13</td>
+    </tr><tr>
+      <td>18</td>
+      <td><strong>Srinivasa</strong></td>
+      <td><span style="font-family:monospace;font-size:0.78rem;background:#f1f8e9;padding:2px 6px;border-radius:4px;">891318783943</span></td>
+      <td>VIRUPAPURA</td>
+      <td><strong style="color:#2e7d32;">0.00</strong></td>
+      <td><span class="badge-status badge-ok">1 Pipe(s)</span></td>
+      <td>Hasneppa</td>
+      <td>2024-07-12</td>
+    </tr><tr>
+      <td>19</td>
+      <td><strong>Tulasirama</strong></td>
+      <td><span style="font-family:monospace;font-size:0.78rem;background:#f1f8e9;padding:2px 6px;border-radius:4px;">369490732005</span></td>
+      <td>VIRUPAPURA</td>
+      <td><strong style="color:#2e7d32;">0.00</strong></td>
+      <td><span class="badge-status badge-ok">1 Pipe(s)</span></td>
+      <td>Hasneppa</td>
+      <td>2024-07-12</td>
+    </tr><tr>
+      <td>20</td>
+      <td><strong>Gopalakrishn Munshi</strong></td>
+      <td><span style="font-family:monospace;font-size:0.78rem;background:#f1f8e9;padding:2px 6px;border-radius:4px;">272713942446</span></td>
+      <td>HANCHINAL</td>
+      <td><strong style="color:#2e7d32;">0.00</strong></td>
+      <td><span class="badge-status badge-ok">1 Pipe(s)</span></td>
+      <td>Hasneppa</td>
+      <td>2024-07-11</td>
+    </tr><tr>
+      <td>21</td>
+      <td><strong>Mariyamma</strong></td>
+      <td><span style="font-family:monospace;font-size:0.78rem;background:#f1f8e9;padding:2px 6px;border-radius:4px;">808174753192</span></td>
+      <td>VIRUPAPURA</td>
+      <td><strong style="color:#2e7d32;">0.00</strong></td>
+      <td><span class="badge-status badge-ok">1 Pipe(s)</span></td>
+      <td>Hasneppa</td>
+      <td>2024-07-11</td>
+    </tr><tr>
+      <td>22</td>
+      <td><strong>Mabsab</strong></td>
+      <td><span style="font-family:monospace;font-size:0.78rem;background:#f1f8e9;padding:2px 6px;border-radius:4px;">984498456926</span></td>
+      <td>MUKUNDA</td>
+      <td><strong style="color:#2e7d32;">0.00</strong></td>
+      <td><span class="badge-status badge-ok">1 Pipe(s)</span></td>
+      <td>Sheiksavali</td>
+      <td>2024-07-09</td>
+    </tr><tr>
+      <td>23</td>
+      <td><strong>Virabhadrayya</strong></td>
+      <td><span style="font-family:monospace;font-size:0.78rem;background:#f1f8e9;padding:2px 6px;border-radius:4px;">980637681806</span></td>
+      <td>YADDALDODDI</td>
+      <td><strong style="color:#2e7d32;">0.00</strong></td>
+      <td><span class="badge-status badge-ok">1 Pipe(s)</span></td>
+      <td>Rajashekar Reddy</td>
+      <td>2024-07-09</td>
+    </tr><tr>
+      <td>24</td>
+      <td><strong>Khaderbasha</strong></td>
+      <td><span style="font-family:monospace;font-size:0.78rem;background:#f1f8e9;padding:2px 6px;border-radius:4px;">485261589295</span></td>
+      <td>MUKUNDA</td>
+      <td><strong style="color:#2e7d32;">0.00</strong></td>
+      <td><span class="badge-status badge-ok">1 Pipe(s)</span></td>
+      <td>Sheiksavali</td>
+      <td>2024-07-08</td>
+    </tr><tr>
+      <td>25</td>
+      <td><strong>Sandeep</strong></td>
+      <td><span style="font-family:monospace;font-size:0.78rem;background:#f1f8e9;padding:2px 6px;border-radius:4px;">395913439834</span></td>
+      <td>MUKUNDA</td>
+      <td><strong style="color:#2e7d32;">0.00</strong></td>
+      <td><span class="badge-status badge-ok">1 Pipe(s)</span></td>
+      <td>Bhimesh</td>
+      <td>2024-07-08</td>
+    </tr><tr>
+      <td>26</td>
+      <td><strong>G.Adilaxmi</strong></td>
+      <td><span style="font-family:monospace;font-size:0.78rem;background:#f1f8e9;padding:2px 6px;border-radius:4px;">230500194573</span></td>
+      <td>HANCHINAL</td>
+      <td><strong style="color:#2e7d32;">0.00</strong></td>
+      <td><span class="badge-status badge-ok">1 Pipe(s)</span></td>
+      <td>Hasneppa</td>
+      <td>2024-07-08</td>
+    </tr><tr>
+      <td>27</td>
+      <td><strong>Saibabu G</strong></td>
+      <td><span style="font-family:monospace;font-size:0.78rem;background:#f1f8e9;padding:2px 6px;border-radius:4px;">865307928452</span></td>
+      <td>HANCHINAL</td>
+      <td><strong style="color:#2e7d32;">0.00</strong></td>
+      <td><span class="badge-status badge-ok">1 Pipe(s)</span></td>
+      <td>Hasneppa</td>
+      <td>2024-07-08</td>
+    </tr><tr>
+      <td>28</td>
+      <td><strong>Adappa</strong></td>
+      <td><span style="font-family:monospace;font-size:0.78rem;background:#f1f8e9;padding:2px 6px;border-radius:4px;">240222380881</span></td>
+      <td>ARLIHALLI</td>
+      <td><strong style="color:#2e7d32;">0.00</strong></td>
+      <td><span class="badge-status badge-ok">1 Pipe(s)</span></td>
+      <td>Hasneppa</td>
+      <td>2024-07-06</td>
+    </tr><tr>
+      <td>29</td>
+      <td><strong>Sanna Amarappa</strong></td>
+      <td><span style="font-family:monospace;font-size:0.78rem;background:#f1f8e9;padding:2px 6px;border-radius:4px;">392842547016</span></td>
+      <td>TURUKATTE</td>
+      <td><strong style="color:#2e7d32;">0.00</strong></td>
+      <td><span class="badge-status badge-ok">1 Pipe(s)</span></td>
+      <td>Rajashekar Reddy</td>
+      <td>2024-07-06</td>
+    </tr><tr>
+      <td>30</td>
+      <td><strong>K Brahmananda Rao</strong></td>
+      <td><span style="font-family:monospace;font-size:0.78rem;background:#f1f8e9;padding:2px 6px;border-radius:4px;">479417434805</span></td>
+      <td>GANDHINAGAR</td>
+      <td><strong style="color:#2e7d32;">0.00</strong></td>
+      <td><span class="badge-status badge-ok">1 Pipe(s)</span></td>
+      <td>Hasneppa</td>
+      <td>2023-06-13</td>
+    </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab 4: Presentation & Methodology -->
+    <div id="tab-presentation" class="awd-tab-panel" style="display:none;">
+      <div style="background:#fff; border-radius:16px; box-shadow:0 5px 25px rgba(0,0,0,0.06); padding:2rem; border:1px solid #e2ede2;">
+        <div style="text-align:center; max-width:700px; margin:0 auto 2rem;">
+          <h3 style="color:#1b5e20; font-size:1.35rem; font-weight:700; margin-bottom:0.5rem;">AWD Technical Methodology &amp; Carbon Framework</h3>
+          <p style="color:#666; font-size:0.92rem;">
+            From the official PCDF Trust, Core CarbonX &amp; Aurigraph Co project presentation deck.
+          </p>
+        </div>
+
+        <!-- 6 Step Method Gallery -->
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:1.5rem; margin-bottom:2.5rem;">
+          
+          <div style="border:1px solid #e0ede0; border-radius:12px; padding:1.2rem; background:#f9fdf9;">
+            <div style="display:flex; align-items:center; gap:0.6rem; margin-bottom:0.8rem;">
+              <span style="background:#2e7d32; color:#fff; width:28px; height:28px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:0.85rem;">1</span>
+              <strong style="color:#1b5e20;">Pani Pipe / PVC Tube</strong>
+            </div>
+            <img src="assets/awd-docs/slides/slide_6_img_11.png" alt="AWD Pipe Dimensions" style="width:100%; height:160px; object-fit:contain; border-radius:8px; background:#fff; margin-bottom:0.6rem; border:1px solid #eee;" />
+            <p style="font-size:0.83rem; color:#555; margin:0;">PVC tube (30 cm length, 15 cm diameter) with perforations in bottom 15 cm and 5 cm soil depth marking.</p>
+          </div>
+
+          <div style="border:1px solid #e0ede0; border-radius:12px; padding:1.2rem; background:#f9fdf9;">
+            <div style="display:flex; align-items:center; gap:0.6rem; margin-bottom:0.8rem;">
+              <span style="background:#2e7d32; color:#fff; width:28px; height:28px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:0.85rem;">2</span>
+              <strong style="color:#1b5e20;">Field Installation</strong>
+            </div>
+            <img src="assets/awd-docs/slides/slide_7_img_12.png" alt="Field Installation" style="width:100%; height:160px; object-fit:contain; border-radius:8px; background:#fff; margin-bottom:0.6rem; border:1px solid #eee;" />
+            <p style="font-size:0.83rem; color:#555; margin:0;">Installed 1 meter away from bund. Tube inserted 15 cm deep, internal soil removed for unimpeded water entry.</p>
+          </div>
+
+          <div style="border:1px solid #e0ede0; border-radius:12px; padding:1.2rem; background:#f9fdf9;">
+            <div style="display:flex; align-items:center; gap:0.6rem; margin-bottom:0.8rem;">
+              <span style="background:#2e7d32; color:#fff; width:28px; height:28px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:0.85rem;">3</span>
+              <strong style="color:#1b5e20;">Water Level Observation</strong>
+            </div>
+            <img src="assets/awd-docs/slides/slide_11_img_18.png" alt="Drying Level" style="width:100%; height:160px; object-fit:contain; border-radius:8px; background:#fff; margin-bottom:0.6rem; border:1px solid #eee;" />
+            <p style="font-size:0.83rem; color:#555; margin:0;">Water permitted to recede to 15 cm below soil surface before re-irrigation, stimulating root aeration.</p>
+          </div>
+
+          <div style="border:1px solid #e0ede0; border-radius:12px; padding:1.2rem; background:#f9fdf9;">
+            <div style="display:flex; align-items:center; gap:0.6rem; margin-bottom:0.8rem;">
+              <span style="background:#2e7d32; color:#fff; width:28px; height:28px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:0.85rem;">4</span>
+              <strong style="color:#1b5e20;">Controlled Wetting Phase</strong>
+            </div>
+            <img src="assets/awd-docs/slides/slide_10_img_16.png" alt="Wetting Phase" style="width:100%; height:160px; object-fit:contain; border-radius:8px; background:#fff; margin-bottom:0.6rem; border:1px solid #eee;" />
+            <p style="font-size:0.83rem; color:#555; margin:0;">Re-irrigation initiated up to 5 cm water depth above soil level. During flowering, standing water maintained.</p>
+          </div>
+
+        </div>
+
+        <!-- Benefits & Climate Impact Summary -->
+        <div style="background:#e8f5e9; border-radius:12px; padding:1.5rem; display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:1.5rem;">
+          <div>
+            <h4 style="color:#1b5e20; margin-top:0; font-size:1.05rem;">🌾 Agronomic &amp; Economic Benefits</h4>
+            <ul style="margin:0; padding-left:1.2rem; font-size:0.88rem; color:#333; line-height:1.7;">
+              <li><strong>55% Maximum Water Reduction</strong> vs conventional continuous flooding</li>
+              <li><strong>30% Savings in Fuel &amp; Labour</strong> on irrigation pump operations</li>
+              <li><strong>Enhanced Root Biomass</strong> &amp; stronger stem lodging resistance</li>
+              <li><strong>Reduced Pest &amp; Fungal Pressure</strong> in paddy rhizosphere</li>
+            </ul>
+          </div>
+          <div>
+            <h4 style="color:#1b5e20; margin-top:0; font-size:1.05rem;">🌍 Climate &amp; Carbon Market Benefits</h4>
+            <ul style="margin:0; padding-left:1.2rem; font-size:0.88rem; color:#333; line-height:1.7;">
+              <li><strong>30% Reduction in Methane (CH₄) Emissions</strong> from anaerobic decay</li>
+              <li><strong>Carbon Credit Revenue Generation</strong> via global voluntary carbon standards</li>
+              <li><strong>Digital Geotagged Auditing</strong> via Core CarbonX mobile sync</li>
+              <li><strong>Farmer Incentive Transfer</strong> from environmental ecosystem services</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<script>
+function switchAwdTab(tabId, btn) {
+  var panels = document.querySelectorAll('.awd-tab-panel');
+  panels.forEach(function(p) { p.style.display = 'none'; });
+  
+  var buttons = ['btn-tab-villages', 'btn-tab-coordinators', 'btn-tab-farmers', 'btn-tab-presentation'];
+  buttons.forEach(function(bId) {
+    var b = document.getElementById(bId);
+    if(b) {
+      b.style.background = '#fff';
+      b.style.color = '#2e7d32';
+    }
+  });
+  
+  var target = document.getElementById(tabId);
+  if(target) target.style.display = 'block';
+  if(btn) {
+    btn.style.background = '#2e7d32';
+    btn.style.color = '#fff';
+  }
+}
+</script>
+
+
 <section id="field-data">
   <div class="container">
     <div class="section-intro">
@@ -1599,8 +2345,14 @@
         </div>
       </div>
 
+
+
+
+
+
+
       <div class="report-card">
-        <div class="report-icon">📸</div>
+        <div class="report-icon">�📸</div>
         <div class="report-body">
           <h3>Photo Documentation Archive</h3>
           <p>Organized field photographs with metadata — village, date, activity, and GPS where available.</p>
@@ -1634,6 +2386,13 @@
 </section>
 
 
+
+
+
+    </div>
+  </div>
+</section>
+
 <!-- ════════════════════════════════════
      SECTION 12 — CONTACT
 ════════════════════════════════════ -->
@@ -1665,7 +2424,7 @@
             <div class="contact-icon">👤</div>
             <div>
               <strong>Contact Person</strong><br />
-              <span>Jadegouda</span>
+              <span>Ragu Gouda</span>
             </div>
           </div>
 
@@ -1690,6 +2449,14 @@
             <div>
               <strong>Email</strong><br />
               <a href="mailto:info@pcdftrust.org">info@pcdftrust.org</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">🌐</div>
+            <div>
+              <strong>Website</strong><br />
+              <a href="https://pcdftrust.org" target="_blank" rel="noopener noreferrer">www.pcdftrust.org</a>
             </div>
           </div>
 
@@ -1817,7 +2584,8 @@
         <h4>Resources</h4>
         <ul class="footer-links">
           <li><a href="#gallery">Photo Gallery</a></li>
-          <li><a href="#field-data">Field Data</a></li>
+          <li><a href="#awd-dataset" style="color:#2e7d32;font-weight:700;">Field Registry (4,153)</a></li>
+      <li><a href="#field-data">Field Data</a></li>
           <li><a href="#impact">Impact Report</a></li>
           <li><a href="#reports">Downloads</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -1827,11 +2595,10 @@
       <div class="footer-col">
         <h4>About PCDF Trust</h4>
         <ul class="footer-links">
-          <li><a href="#">About the Trust</a></li>
-          <li><a href="#">Our Projects</a></li>
-          <li><a href="#">Field Teams</a></li>
-          <li><a href="#">Partner with Us</a></li>
-          <li><a href="#">Donate</a></li>
+          <li>Ragu Gouda</li>
+          <li><a href="tel:+919663717584">96637 17584</a></li>
+          <li><a href="mailto:info@pcdftrust.org">info@pcdftrust.org</a></li>
+          <li><a href="https://pcdftrust.org" target="_blank" rel="noopener noreferrer">www.pcdftrust.org</a></li>
           <li><a href="#contact">Get in Touch</a></li>
         </ul>
       </div>

@@ -58,6 +58,9 @@
       background:var(--primary-color); color:#fff;
     }
     .gallery-item.hidden { display:none; }
+  
+    #trainees table tbody tr:nth-child(even) { background: #f7fcff; }
+    #trainees table tbody tr:hover { background: #e1f5fe !important; }
   </style>
 </head>
 <body>
@@ -76,6 +79,8 @@
       <li><a href="index.html">Dashboard</a></li>
       <li><a href="#overview">Overview</a></li>
       <li><a href="#objectives">Programme Details</a></li>
+      <li><a href="#trainees" style="color:var(--primary-color);font-weight:700;">Candidates (59)</a></li>
+      <li><a href="#trainees" style="color:var(--primary-color);font-weight:700;">Candidates (59)</a></li>
       <li><a href="#gallery">Gallery</a></li>
       <li><a href="#contact" class="nav-btn">Contact Us</a></li>
     </ul>
@@ -88,7 +93,9 @@
     <li><a href="index.html">Dashboard</a></li>
     <li><a href="#overview">Overview</a></li>
     <li><a href="#objectives">Programme Details</a></li>
-    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#trainees" style="color:var(--primary-color);font-weight:700;">Candidates (59)</a></li>
+      <li><a href="#trainees" style="color:var(--primary-color);font-weight:700;">Candidates (59)</a></li>
+      <li><a href="#gallery">Gallery</a></li>
     <li><a href="#contact">Contact Us</a></li>
   </ul>
 </div>
@@ -171,7 +178,7 @@
   <div class="container">
     <div class="impact-grid">
       <div class="impact-card highlight">
-        <div class="impact-card-num">30+</div>
+        <div class="impact-card-num">59</div>
         <div class="impact-card-label">Fish Farmers Trained</div>
         <p>Directly trained in modern aquaculture techniques during the Jan/Feb 2026 batches.</p>
       </div>
@@ -190,6 +197,1496 @@
 </section>
 
 <!-- GALLERY -->
+
+<!-- ════════════════════════════════════
+     NFDB AQUACULTURE TRAINEE REGISTRY
+════════════════════════════════════ -->
+<section id="trainees" style="background:#f0f9ff; padding:5rem 0; border-top:1px solid #b3e5fc; border-bottom:1px solid #b3e5fc;">
+  <div class="container">
+    <div class="section-intro" style="text-align:center; max-width:800px; margin:0 auto 3rem;">
+      <span class="section-tag" style="background:#e1f5fe; color:#0277bd; font-weight:700;">🐟 Beneficiary Registry</span>
+      <h2 class="section-heading" style="color:#01579b;">NFDB Aquaculture — Enrolled Candidates</h2>
+      <p style="color:#555; font-size:1.05rem; line-height:1.6;">
+        Official beneficiary records under the <strong>National Fisheries Development Board (NFDB)</strong> SCSP &amp; TSP capacity building program, facilitated by PCDF Trust across Kampli, Ramasagara &amp; Gangavathi.
+      </p>
+
+      <!-- Key Stat Badges -->
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(170px, 1fr)); gap:1.2rem; margin-top:2.5rem;">
+        <div style="background:#fff; border-radius:12px; padding:1.2rem; box-shadow:0 4px 15px rgba(0,0,0,0.04); border-left:4px solid #0277bd;">
+          <div style="font-size:1.8rem; font-weight:800; color:#0277bd;">59</div>
+          <div style="font-size:0.83rem; color:#666; font-weight:600;">Enrolled Fisher Candidates</div>
+        </div>
+        <div style="background:#fff; border-radius:12px; padding:1.2rem; box-shadow:0 4px 15px rgba(0,0,0,0.04); border-left:4px solid #00838f;">
+          <div style="font-size:1.8rem; font-weight:800; color:#00838f;">35 / 24</div>
+          <div style="font-size:0.83rem; color:#666; font-weight:600;">ST (35) &amp; SC (24) Communities</div>
+        </div>
+        <div style="background:#fff; border-radius:12px; padding:1.2rem; box-shadow:0 4px 15px rgba(0,0,0,0.04); border-left:4px solid #e91e63;">
+          <div style="font-size:1.8rem; font-weight:800; color:#e91e63;">60% Women</div>
+          <div style="font-size:0.83rem; color:#666; font-weight:600;">Female Participation</div>
+        </div>
+        <div style="background:#fff; border-radius:12px; padding:1.2rem; box-shadow:0 4px 15px rgba(0,0,0,0.04); border-left:4px solid #2e7d32;">
+          <div style="font-size:1.8rem; font-weight:800; color:#2e7d32;">ASCI Certified</div>
+          <div style="font-size:0.83rem; color:#666; font-weight:600;">Skill Assessment Cleared</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Batch Switcher Tabs -->
+    <div style="display:flex; justify-content:center; gap:0.75rem; margin-bottom:2rem; flex-wrap:wrap;">
+      <button onclick="switchFishTab('tab-all', this)" id="btn-tab-all" style="padding:0.6rem 1.4rem; border-radius:50px; font-weight:700; border:2px solid #0277bd; background:#0277bd; color:#fff; cursor:pointer; font-size:0.9rem;">
+        🐟 All Candidates Master List (59)
+      </button>
+      <button onclick="switchFishTab('tab-sc', this)" id="btn-tab-sc" style="padding:0.6rem 1.4rem; border-radius:50px; font-weight:700; border:2px solid #0277bd; background:#fff; color:#0277bd; cursor:pointer; font-size:0.9rem;">
+        👥 SC Beneficiary Batch (24)
+      </button>
+      <button onclick="switchFishTab('tab-upd', this)" id="btn-tab-upd" style="padding:0.6rem 1.4rem; border-radius:50px; font-weight:700; border:2px solid #0277bd; background:#fff; color:#0277bd; cursor:pointer; font-size:0.9rem;">
+        📑 Certified Batch List (49)
+      </button>
+    </div>
+
+    <!-- Tab 1: All Candidates -->
+    <div id="tab-all" class="fish-tab-panel" style="display:block;">
+      <div style="background:#fff; border-radius:16px; box-shadow:0 6px 25px rgba(0,0,0,0.06); overflow:hidden; border:1px solid #b3e5fc;">
+        <div style="background:linear-gradient(135deg, #01579b, #0288d1); color:#fff; padding:1.2rem 1.8rem; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem;">
+          <div>
+            <h3 style="margin:0; font-size:1.15rem; font-weight:700; color:#fff;">🐟 Complete Enrolled Candidate Registry (59 Candidates)</h3>
+            <p style="margin:0.2rem 0 0; font-size:0.85rem; opacity:0.9;">ASCI &amp; NFDB Capacity Building Training under SCSP &amp; TSP Programs</p>
+          </div>
+          <span style="background:rgba(255,255,255,0.2); padding:0.35rem 0.9rem; border-radius:20px; font-size:0.82rem; font-weight:700;">59 Trainees Enrolled</span>
+        </div>
+        <div style="overflow-x:auto;">
+          <table class="data-table" style="width:100%; margin:0; border-collapse:collapse;">
+            <thead>
+              <tr style="background:#e1f5fe;">
+                <th style="color:#01579b; padding:0.75rem 0.9rem;">#</th>
+                <th style="color:#01579b; padding:0.75rem 0.9rem;">Candidate Name</th>
+                <th style="color:#01579b; padding:0.75rem 0.9rem;">Father / Spouse Name</th>
+                <th style="color:#01579b; padding:0.75rem 0.9rem;">Gender</th>
+                <th style="color:#01579b; padding:0.75rem 0.9rem;">DOB</th>
+                <th style="color:#01579b; padding:0.75rem 0.9rem;">Category</th>
+                <th style="color:#01579b; padding:0.75rem 0.9rem;">Centre / Branch</th>
+                <th style="color:#01579b; padding:0.75rem 0.9rem;">Bank Name</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#1</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>Kavitha</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Somushekar</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">1992-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fff3e0;color:#e65100;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">ST</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Kampli</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#2</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>T Gangamma</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Mareppa</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">1992-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fff3e0;color:#e65100;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">ST</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Kampli</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#3</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>E Parvathi</strong></td>
+          <td style="padding:0.7rem 0.9rem;">E Devendra</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">2002-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fff3e0;color:#e65100;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">ST</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Kampli</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Karnataka Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#4</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>N Maremma</strong></td>
+          <td style="padding:0.7rem 0.9rem;">N Devanna</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">1990-03-08</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fff3e0;color:#e65100;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">ST</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Ramasagara</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#5</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>N Bojaraja</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Pampanna</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e3f2fd;color:#0d47a1;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Male</span></td>
+          <td style="padding:0.7rem 0.9rem;">2002-08-09</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fff3e0;color:#e65100;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">ST</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Gangavathi</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Bank Of Baroda</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#6</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>Buddeppa</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Pampanna</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e3f2fd;color:#0d47a1;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Male</span></td>
+          <td style="padding:0.7rem 0.9rem;">1974-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fff3e0;color:#e65100;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">ST</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Ramasagara</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#7</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>Devanna</strong></td>
+          <td style="padding:0.7rem 0.9rem;">T Narasappa</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e3f2fd;color:#0d47a1;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Male</span></td>
+          <td style="padding:0.7rem 0.9rem;">1981-10-10</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fff3e0;color:#e65100;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">ST</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Ramasagara</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#8</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>Hulugappa</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Hulugappa</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e3f2fd;color:#0d47a1;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Male</span></td>
+          <td style="padding:0.7rem 0.9rem;">1984-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fff3e0;color:#e65100;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">ST</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Kampli</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#9</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>Maresh</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Nagappa</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e3f2fd;color:#0d47a1;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Male</span></td>
+          <td style="padding:0.7rem 0.9rem;">1978-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fff3e0;color:#e65100;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">ST</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Kampli</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#10</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>Karisidda</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Pakkirappa</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e3f2fd;color:#0d47a1;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Male</span></td>
+          <td style="padding:0.7rem 0.9rem;">1990-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fff3e0;color:#e65100;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">ST</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Ramasagara</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#11</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>Ramayya</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Lingappa</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e3f2fd;color:#0d47a1;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Male</span></td>
+          <td style="padding:0.7rem 0.9rem;">1983-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fff3e0;color:#e65100;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">ST</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Kampli</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#12</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>Yallappa</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Ramayya</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e3f2fd;color:#0d47a1;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Male</span></td>
+          <td style="padding:0.7rem 0.9rem;">2001-06-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fff3e0;color:#e65100;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">ST</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Kampli</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#13</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>Ningappa</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Bhimappa</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e3f2fd;color:#0d47a1;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Male</span></td>
+          <td style="padding:0.7rem 0.9rem;">1988-06-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fff3e0;color:#e65100;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">ST</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Ramasagara</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#14</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>Yankanna</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Ganki Hanumantha</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e3f2fd;color:#0d47a1;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Male</span></td>
+          <td style="padding:0.7rem 0.9rem;">1978-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fff3e0;color:#e65100;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">ST</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Ramasagara</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#15</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>Yallappa</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Bhimappa</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e3f2fd;color:#0d47a1;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Male</span></td>
+          <td style="padding:0.7rem 0.9rem;">1980-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fff3e0;color:#e65100;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">ST</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Ramasagara</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#16</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>Mareppa</strong></td>
+          <td style="padding:0.7rem 0.9rem;">T Eranna</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e3f2fd;color:#0d47a1;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Male</span></td>
+          <td style="padding:0.7rem 0.9rem;">1980-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fff3e0;color:#e65100;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">ST</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Kampli</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#17</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>Maresh</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Pampanna</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e3f2fd;color:#0d47a1;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Male</span></td>
+          <td style="padding:0.7rem 0.9rem;">1997-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fff3e0;color:#e65100;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">ST</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Ramasagara</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#18</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>T Sakrayya</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Mallappa</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e3f2fd;color:#0d47a1;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Male</span></td>
+          <td style="padding:0.7rem 0.9rem;">1994-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fff3e0;color:#e65100;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">ST</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Kampli</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Karnataka Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#19</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>N Chandrappa</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Guddekayi Yankamma</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e3f2fd;color:#0d47a1;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Male</span></td>
+          <td style="padding:0.7rem 0.9rem;">1993-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fff3e0;color:#e65100;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">ST</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Kampli</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">State Bank Of India</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#20</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>Veeresh</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Yankappa</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e3f2fd;color:#0d47a1;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Male</span></td>
+          <td style="padding:0.7rem 0.9rem;">1993-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fff3e0;color:#e65100;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">ST</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Kampli</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Karnataka Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#21</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>Muniyappa</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Kristayya</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e3f2fd;color:#0d47a1;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Male</span></td>
+          <td style="padding:0.7rem 0.9rem;">1981-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fff3e0;color:#e65100;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">ST</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Ramasagara</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#22</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>Guddakayi Siddappa</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Yankappa</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e3f2fd;color:#0d47a1;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Male</span></td>
+          <td style="padding:0.7rem 0.9rem;">1985-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fff3e0;color:#e65100;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">ST</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Kampli</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#23</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>N Ramesha</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Benakappa</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e3f2fd;color:#0d47a1;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Male</span></td>
+          <td style="padding:0.7rem 0.9rem;">2000-01-06</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fff3e0;color:#e65100;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">ST</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Ramasagara</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#24</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>Eranna</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Kallappa</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e3f2fd;color:#0d47a1;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Male</span></td>
+          <td style="padding:0.7rem 0.9rem;">1981-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fff3e0;color:#e65100;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">ST</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Kampli</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#25</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>T Lakshmi</strong></td>
+          <td style="padding:0.7rem 0.9rem;">T Annjineya</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e3f2fd;color:#0d47a1;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Male</span></td>
+          <td style="padding:0.7rem 0.9rem;">1978-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fff3e0;color:#e65100;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">ST</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Kampli</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">State Bank Of India</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#26</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>T Lakshmana</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Hulugappa</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e3f2fd;color:#0d47a1;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Male</span></td>
+          <td style="padding:0.7rem 0.9rem;">1977-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fff3e0;color:#e65100;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">ST</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Ramasagara</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#27</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>Venkatesha</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Siddanayakappa</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e3f2fd;color:#0d47a1;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Male</span></td>
+          <td style="padding:0.7rem 0.9rem;">1990-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fff3e0;color:#e65100;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">ST</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Ramasagara</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#28</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>Basava</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Marenna</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e3f2fd;color:#0d47a1;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Male</span></td>
+          <td style="padding:0.7rem 0.9rem;">1989-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fff3e0;color:#e65100;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">ST</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Kampli</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#29</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>T Rathnamma</strong></td>
+          <td style="padding:0.7rem 0.9rem;">T Basavaraja</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">1991-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fff3e0;color:#e65100;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">ST</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Kampli</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#30</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>Huligemma</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Honnurappa</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">1967-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fff3e0;color:#e65100;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">ST</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Ramasagara</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#31</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>T Hanumanthamma</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Eranna</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">1975-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fff3e0;color:#e65100;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">ST</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Kampli</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#32</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>N Mahalakshmi</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Purushothamma</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">2001-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fff3e0;color:#e65100;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">ST</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Ramasagara</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#33</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>T Huligemma</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Hanumayya</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">1974-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fff3e0;color:#e65100;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">ST</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Kampli</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">State Bank Of India</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#34</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>Lakshmi</strong></td>
+          <td style="padding:0.7rem 0.9rem;">H Kallappa</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">1978-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e8f5e9;color:#2e7d32;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">SC</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Ramasagara</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#35</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>Shivagangamma</strong></td>
+          <td style="padding:0.7rem 0.9rem;">H Basavaraja</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">1990-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e8f5e9;color:#2e7d32;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">SC</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Ramasagara</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#36</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>Ambamma</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Ramaliswamy</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">1989-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e8f5e9;color:#2e7d32;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">SC</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Kampli</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#37</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>Pakkiramma</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Ramappa</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">1969-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e8f5e9;color:#2e7d32;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">SC</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Kampli</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Karnataka Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#38</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>Hanumanthamma</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Chandrappa</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">1977-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e8f5e9;color:#2e7d32;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">SC</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Ramasagara</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#39</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>Durugamma</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Eranna</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">1970-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e8f5e9;color:#2e7d32;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">SC</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Ramasagara</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#40</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>H Basamma</strong></td>
+          <td style="padding:0.7rem 0.9rem;">H Bettappa</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">1972-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e8f5e9;color:#2e7d32;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">SC</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Kampli</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#41</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>H Shankramma</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Somappa</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">1980-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e8f5e9;color:#2e7d32;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">SC</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Kampli</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#42</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>H Huligemma</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Hampamma</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">1985-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e8f5e9;color:#2e7d32;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">SC</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Ramasagara</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#43</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>H Nagamma</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Hanumanthappa</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">1982-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e8f5e9;color:#2e7d32;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">SC</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Ramasagara</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#44</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>Honnuramma</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Pakkiramma</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">1983-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e8f5e9;color:#2e7d32;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">SC</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Ramasagara</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#45</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>H Karemma</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Huchchamma</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">1951-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e8f5e9;color:#2e7d32;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">SC</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Ramasagara</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#46</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>Bheemambika</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Somayya</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">2001-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e8f5e9;color:#2e7d32;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">SC</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Ramasagara</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#47</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>H Huligemma</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Eranna</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">1965-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e8f5e9;color:#2e7d32;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">SC</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Ramasagara</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#48</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>Huligemma</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Honnurappa</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">1989-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e8f5e9;color:#2e7d32;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">SC</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Ramasagara</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#49</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>H Hanumanthamma</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Sanna Mallappa</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">1986-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e8f5e9;color:#2e7d32;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">SC</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Kampli</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#50</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>Harijana Lakshmi</strong></td>
+          <td style="padding:0.7rem 0.9rem;">H Mareppa</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">1980-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e8f5e9;color:#2e7d32;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">SC</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Ramasagara</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#51</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>H Husenamma</strong></td>
+          <td style="padding:0.7rem 0.9rem;">H Hanumanthappa</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">1991-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e8f5e9;color:#2e7d32;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">SC</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Ramasagara</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#52</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>H Eshwaramma</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Mallappa</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">1982-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e8f5e9;color:#2e7d32;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">SC</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Ramasagara</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#53</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>H Gangamma</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Malleshappa</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">1973-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e8f5e9;color:#2e7d32;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">SC</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Kampli</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#54</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>H Eramma</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Hulugappa</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">1989-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e8f5e9;color:#2e7d32;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">SC</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Kampli</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#55</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>H Huligemma</strong></td>
+          <td style="padding:0.7rem 0.9rem;">H Huluganna</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">1998-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e8f5e9;color:#2e7d32;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">SC</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Ramasagara</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#56</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>Bhagyamma</strong></td>
+          <td style="padding:0.7rem 0.9rem;">H Eranna</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">1989-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e8f5e9;color:#2e7d32;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">SC</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Ramasagara</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#57</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>H Neelamma</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Basavaraja</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">1983-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e8f5e9;color:#2e7d32;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">SC</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Kampli</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#58</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>Lakshmidevi</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Marenna</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">1973-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fff3e0;color:#e65100;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">ST</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Ramasagara</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#59</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>Eramma</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Marenna</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">1985-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fff3e0;color:#e65100;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">ST</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Kampli</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab 2: SC Batch -->
+    <div id="tab-sc" class="fish-tab-panel" style="display:none;">
+      <div style="background:#fff; border-radius:16px; box-shadow:0 6px 25px rgba(0,0,0,0.06); overflow:hidden; border:1px solid #b3e5fc;">
+        <div style="background:linear-gradient(135deg, #2e7d32, #43a047); color:#fff; padding:1.2rem 1.8rem; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem;">
+          <div>
+            <h3 style="margin:0; font-size:1.15rem; font-weight:700; color:#fff;">👥 Scheduled Caste (SC) Beneficiary Cohort (24 Candidates)</h3>
+            <p style="margin:0.2rem 0 0; font-size:0.85rem; opacity:0.9;">100% Women cohort enrolled under SCSP for sustainable fish farming livelihoods</p>
+          </div>
+          <span style="background:rgba(255,255,255,0.2); padding:0.35rem 0.9rem; border-radius:20px; font-size:0.82rem; font-weight:700;">24 Women Enrolled</span>
+        </div>
+        <div style="overflow-x:auto;">
+          <table class="data-table" style="width:100%; margin:0; border-collapse:collapse;">
+            <thead>
+              <tr style="background:#e8f5e9;">
+                <th style="color:#1b5e20; padding:0.75rem 0.9rem;">#</th>
+                <th style="color:#1b5e20; padding:0.75rem 0.9rem;">Candidate Name</th>
+                <th style="color:#1b5e20; padding:0.75rem 0.9rem;">Father / Spouse Name</th>
+                <th style="color:#1b5e20; padding:0.75rem 0.9rem;">Gender</th>
+                <th style="color:#1b5e20; padding:0.75rem 0.9rem;">DOB</th>
+                <th style="color:#1b5e20; padding:0.75rem 0.9rem;">Category</th>
+                <th style="color:#1b5e20; padding:0.75rem 0.9rem;">Centre / Branch</th>
+                <th style="color:#1b5e20; padding:0.75rem 0.9rem;">Bank Name</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#1</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>Lakshmi</strong></td>
+          <td style="padding:0.7rem 0.9rem;">H Kallappa</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">1978-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e8f5e9;color:#2e7d32;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">SC</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Ramasagara</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#2</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>Shivagangamma</strong></td>
+          <td style="padding:0.7rem 0.9rem;">H Basavaraja</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">1990-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e8f5e9;color:#2e7d32;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">SC</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Ramasagara</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#3</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>Ambamma</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Ramaliswamy</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">1989-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e8f5e9;color:#2e7d32;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">SC</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Kampli</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#4</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>Pakkiramma</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Ramappa</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">1969-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e8f5e9;color:#2e7d32;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">SC</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Kampli</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Karnataka Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#5</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>Hanumanthamma</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Chandrappa</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">1977-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e8f5e9;color:#2e7d32;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">SC</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Ramasagara</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#6</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>Durugamma</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Eranna</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">1970-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e8f5e9;color:#2e7d32;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">SC</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Ramasagara</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#7</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>H Basamma</strong></td>
+          <td style="padding:0.7rem 0.9rem;">H Bettappa</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">1972-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e8f5e9;color:#2e7d32;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">SC</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Kampli</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#8</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>H Shankramma</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Somappa</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">1980-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e8f5e9;color:#2e7d32;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">SC</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Kampli</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#9</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>H Huligemma</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Hampamma</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">1985-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e8f5e9;color:#2e7d32;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">SC</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Ramasagara</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#10</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>H Nagamma</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Hanumanthappa</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">1982-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e8f5e9;color:#2e7d32;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">SC</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Ramasagara</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#11</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>Honnuramma</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Pakkiramma</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">1983-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e8f5e9;color:#2e7d32;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">SC</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Ramasagara</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#12</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>H Karemma</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Huchchamma</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">1951-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e8f5e9;color:#2e7d32;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">SC</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Ramasagara</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#13</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>Bheemambika</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Somayya</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">2001-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e8f5e9;color:#2e7d32;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">SC</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Ramasagara</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#14</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>H Huligemma</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Eranna</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">1965-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e8f5e9;color:#2e7d32;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">SC</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Ramasagara</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#15</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>Huligemma</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Honnurappa</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">1989-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e8f5e9;color:#2e7d32;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">SC</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Ramasagara</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#16</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>H Hanumanthamma</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Sanna Mallappa</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">1986-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e8f5e9;color:#2e7d32;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">SC</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Kampli</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#17</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>Harijana Lakshmi</strong></td>
+          <td style="padding:0.7rem 0.9rem;">H Mareppa</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">1980-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e8f5e9;color:#2e7d32;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">SC</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Ramasagara</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#18</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>H Husenamma</strong></td>
+          <td style="padding:0.7rem 0.9rem;">H Hanumanthappa</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">1991-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e8f5e9;color:#2e7d32;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">SC</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Ramasagara</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#19</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>H Eshwaramma</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Mallappa</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">1982-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e8f5e9;color:#2e7d32;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">SC</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Ramasagara</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#20</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>H Gangamma</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Malleshappa</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">1973-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e8f5e9;color:#2e7d32;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">SC</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Kampli</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#21</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>H Eramma</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Hulugappa</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">1989-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e8f5e9;color:#2e7d32;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">SC</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Kampli</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#22</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>H Huligemma</strong></td>
+          <td style="padding:0.7rem 0.9rem;">H Huluganna</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">1998-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e8f5e9;color:#2e7d32;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">SC</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Ramasagara</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#23</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>Bhagyamma</strong></td>
+          <td style="padding:0.7rem 0.9rem;">H Eranna</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">1989-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e8f5e9;color:#2e7d32;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">SC</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Ramasagara</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#24</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>H Neelamma</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Basavaraja</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">1983-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e8f5e9;color:#2e7d32;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">SC</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Kampli</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab 3: Updated List -->
+    <div id="tab-upd" class="fish-tab-panel" style="display:none;">
+      <div style="background:#fff; border-radius:16px; box-shadow:0 6px 25px rgba(0,0,0,0.06); overflow:hidden; border:1px solid #b3e5fc;">
+        <div style="background:linear-gradient(135deg, #00838f, #00acc1); color:#fff; padding:1.2rem 1.8rem; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem;">
+          <div>
+            <h3 style="margin:0; font-size:1.15rem; font-weight:700; color:#fff;">📑 Verified Assessment &amp; Certification Batch (49 Candidates)</h3>
+            <p style="margin:0.2rem 0 0; font-size:0.85rem; opacity:0.9;">ASCI assessed cohort receiving formal certification and banking enablement</p>
+          </div>
+          <span style="background:rgba(255,255,255,0.2); padding:0.35rem 0.9rem; border-radius:20px; font-size:0.82rem; font-weight:700;">49 Candidates Verified</span>
+        </div>
+        <div style="overflow-x:auto;">
+          <table class="data-table" style="width:100%; margin:0; border-collapse:collapse;">
+            <thead>
+              <tr style="background:#e0f7fa;">
+                <th style="color:#006064; padding:0.75rem 0.9rem;">#</th>
+                <th style="color:#006064; padding:0.75rem 0.9rem;">Candidate Name</th>
+                <th style="color:#006064; padding:0.75rem 0.9rem;">Father / Spouse Name</th>
+                <th style="color:#006064; padding:0.75rem 0.9rem;">Gender</th>
+                <th style="color:#006064; padding:0.75rem 0.9rem;">DOB</th>
+                <th style="color:#006064; padding:0.75rem 0.9rem;">Category</th>
+                <th style="color:#006064; padding:0.75rem 0.9rem;">Centre / Branch</th>
+                <th style="color:#006064; padding:0.75rem 0.9rem;">Bank Name</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#1</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>N Bojaraja</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Pampanna</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e3f2fd;color:#0d47a1;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Male</span></td>
+          <td style="padding:0.7rem 0.9rem;">2002-08-09</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fff3e0;color:#e65100;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">ST</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Gangavathi</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Bank Of Baroda</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#2</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>Buddeppa</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Pampanna</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e3f2fd;color:#0d47a1;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Male</span></td>
+          <td style="padding:0.7rem 0.9rem;">1974-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fff3e0;color:#e65100;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">ST</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Ramasagara</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#3</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>Devanna</strong></td>
+          <td style="padding:0.7rem 0.9rem;">T Narasappa</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e3f2fd;color:#0d47a1;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Male</span></td>
+          <td style="padding:0.7rem 0.9rem;">1981-10-10</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fff3e0;color:#e65100;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">ST</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Ramasagara</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#4</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>Parashurama</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Hulugappa</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">1995-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fff3e0;color:#e65100;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">ST</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">—</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">—</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#5</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>Hulugappa</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Hulugappa</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e3f2fd;color:#0d47a1;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Male</span></td>
+          <td style="padding:0.7rem 0.9rem;">1984-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fff3e0;color:#e65100;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">ST</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Kampli</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#6</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>Maresh</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Nagappa</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e3f2fd;color:#0d47a1;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Male</span></td>
+          <td style="padding:0.7rem 0.9rem;">1978-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fff3e0;color:#e65100;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">ST</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Kampli</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#7</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>Karisidda</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Pakkirappa</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e3f2fd;color:#0d47a1;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Male</span></td>
+          <td style="padding:0.7rem 0.9rem;">1990-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fff3e0;color:#e65100;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">ST</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Ramasagara</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#8</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>Ramayya</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Lingappa</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e3f2fd;color:#0d47a1;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Male</span></td>
+          <td style="padding:0.7rem 0.9rem;">1983-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fff3e0;color:#e65100;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">ST</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Kampli</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#9</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>Yallappa</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Ramayya</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e3f2fd;color:#0d47a1;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Male</span></td>
+          <td style="padding:0.7rem 0.9rem;">2001-06-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fff3e0;color:#e65100;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">ST</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Kampli</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#10</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>Ningappa</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Bhimappa</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e3f2fd;color:#0d47a1;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Male</span></td>
+          <td style="padding:0.7rem 0.9rem;">1988-06-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fff3e0;color:#e65100;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">ST</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Ramasagara</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#11</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>Yankanna</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Ganki Hanumantha</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e3f2fd;color:#0d47a1;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Male</span></td>
+          <td style="padding:0.7rem 0.9rem;">1978-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fff3e0;color:#e65100;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">ST</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Ramasagara</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#12</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>Yallappa</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Bhimappa</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e3f2fd;color:#0d47a1;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Male</span></td>
+          <td style="padding:0.7rem 0.9rem;">1980-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fff3e0;color:#e65100;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">ST</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Ramasagara</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#13</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>Mareppa</strong></td>
+          <td style="padding:0.7rem 0.9rem;">T Eranna</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e3f2fd;color:#0d47a1;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Male</span></td>
+          <td style="padding:0.7rem 0.9rem;">1980-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fff3e0;color:#e65100;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">ST</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Kampli</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#14</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>Maresh</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Pampanna</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e3f2fd;color:#0d47a1;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Male</span></td>
+          <td style="padding:0.7rem 0.9rem;">1997-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fff3e0;color:#e65100;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">ST</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Ramasagara</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#15</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>T Sakrayya</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Mallappa</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e3f2fd;color:#0d47a1;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Male</span></td>
+          <td style="padding:0.7rem 0.9rem;">1994-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fff3e0;color:#e65100;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">ST</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Kampli</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Karnataka Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#16</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>N Chandrappa</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Guddekayi Yankamma</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e3f2fd;color:#0d47a1;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Male</span></td>
+          <td style="padding:0.7rem 0.9rem;">1993-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fff3e0;color:#e65100;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">ST</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Kampli</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">State Bank Of India</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#17</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>Veeresh</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Yankappa</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e3f2fd;color:#0d47a1;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Male</span></td>
+          <td style="padding:0.7rem 0.9rem;">1993-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fff3e0;color:#e65100;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">ST</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Kampli</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Karnataka Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#18</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>Muniyappa</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Kristayya</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e3f2fd;color:#0d47a1;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Male</span></td>
+          <td style="padding:0.7rem 0.9rem;">1981-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fff3e0;color:#e65100;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">ST</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Ramasagara</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#19</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>Guddakayi Siddappa</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Yankappa</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e3f2fd;color:#0d47a1;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Male</span></td>
+          <td style="padding:0.7rem 0.9rem;">1985-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fff3e0;color:#e65100;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">ST</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Kampli</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#20</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>N Ramesha</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Benakappa</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e3f2fd;color:#0d47a1;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Male</span></td>
+          <td style="padding:0.7rem 0.9rem;">2000-01-06</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fff3e0;color:#e65100;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">ST</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Ramasagara</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#21</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>Eranna</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Kallappa</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e3f2fd;color:#0d47a1;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Male</span></td>
+          <td style="padding:0.7rem 0.9rem;">1981-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fff3e0;color:#e65100;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">ST</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Kampli</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#22</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>T Lakshmi</strong></td>
+          <td style="padding:0.7rem 0.9rem;">T Annjineya</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e3f2fd;color:#0d47a1;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Male</span></td>
+          <td style="padding:0.7rem 0.9rem;">1978-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fff3e0;color:#e65100;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">ST</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Kampli</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">State Bank Of India</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#23</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>T Lakshmana</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Hulugappa</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e3f2fd;color:#0d47a1;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Male</span></td>
+          <td style="padding:0.7rem 0.9rem;">1977-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fff3e0;color:#e65100;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">ST</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Ramasagara</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#24</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>Venkatesha</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Siddanayakappa</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e3f2fd;color:#0d47a1;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Male</span></td>
+          <td style="padding:0.7rem 0.9rem;">1990-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fff3e0;color:#e65100;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">ST</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Ramasagara</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#25</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>Lakshmi</strong></td>
+          <td style="padding:0.7rem 0.9rem;">H Kallappa</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">1978-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e8f5e9;color:#2e7d32;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">SC</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Ramasagara</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#26</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>Shivagangamma</strong></td>
+          <td style="padding:0.7rem 0.9rem;">H Basavaraja</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">1990-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e8f5e9;color:#2e7d32;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">SC</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Ramasagara</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#27</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>Ambamma</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Ramaliswamy</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">1989-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e8f5e9;color:#2e7d32;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">SC</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Kampli</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#28</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>Pakkiramma</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Ramappa</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">1969-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e8f5e9;color:#2e7d32;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">SC</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Kampli</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Karnataka Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#29</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>Hanumanthamma</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Chandrappa</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">1977-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e8f5e9;color:#2e7d32;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">SC</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Ramasagara</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#30</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>Durugamma</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Eranna</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">1970-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e8f5e9;color:#2e7d32;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">SC</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Ramasagara</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#31</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>H Basamma</strong></td>
+          <td style="padding:0.7rem 0.9rem;">H Bettappa</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">1972-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e8f5e9;color:#2e7d32;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">SC</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Kampli</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#32</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>H Shankramma</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Somappa</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">1980-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e8f5e9;color:#2e7d32;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">SC</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Kampli</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#33</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>H Huligemma</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Hampamma</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">1985-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e8f5e9;color:#2e7d32;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">SC</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Ramasagara</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#34</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>H Nagamma</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Hanumanthappa</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">1982-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e8f5e9;color:#2e7d32;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">SC</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Ramasagara</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#35</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>Honnuramma</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Pakkiramma</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">1983-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e8f5e9;color:#2e7d32;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">SC</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Ramasagara</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#36</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>H Karemma</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Huchchamma</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">1951-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e8f5e9;color:#2e7d32;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">SC</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Ramasagara</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#37</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>Bheemambika</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Somayya</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">2001-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e8f5e9;color:#2e7d32;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">SC</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Ramasagara</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#38</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>H Huligemma</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Eranna</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">1965-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e8f5e9;color:#2e7d32;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">SC</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Ramasagara</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#39</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>Huligemma</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Honnurappa</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">1989-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e8f5e9;color:#2e7d32;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">SC</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Ramasagara</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#40</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>H Hanumanthamma</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Sanna Mallappa</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">1986-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e8f5e9;color:#2e7d32;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">SC</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Kampli</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#41</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>Harijana Lakshmi</strong></td>
+          <td style="padding:0.7rem 0.9rem;">H Mareppa</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">1980-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e8f5e9;color:#2e7d32;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">SC</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Ramasagara</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#42</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>H Husenamma</strong></td>
+          <td style="padding:0.7rem 0.9rem;">H Hanumanthappa</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">1991-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e8f5e9;color:#2e7d32;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">SC</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Ramasagara</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#43</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>H Eshwaramma</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Mallappa</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">1982-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e8f5e9;color:#2e7d32;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">SC</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Ramasagara</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#44</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>H Gangamma</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Malleshappa</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">1973-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e8f5e9;color:#2e7d32;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">SC</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Kampli</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#45</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>H Eramma</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Hulugappa</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">1989-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e8f5e9;color:#2e7d32;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">SC</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Kampli</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#46</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>H Huligemma</strong></td>
+          <td style="padding:0.7rem 0.9rem;">H Huluganna</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">1998-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e8f5e9;color:#2e7d32;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">SC</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Ramasagara</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#47</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>Bhagyamma</strong></td>
+          <td style="padding:0.7rem 0.9rem;">H Eranna</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">1989-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e8f5e9;color:#2e7d32;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">SC</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Ramasagara</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#48</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>H Neelamma</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Basavaraja</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fce4ec;color:#880e4f;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Female</span></td>
+          <td style="padding:0.7rem 0.9rem;">1983-01-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e8f5e9;color:#2e7d32;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">SC</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Kampli</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+<tr style="border-bottom:1px solid #e1f5fe;">
+          <td style="padding:0.7rem 0.9rem;"><strong>#49</strong></td>
+          <td style="padding:0.7rem 0.9rem;"><strong>Talavar Thippayya</strong></td>
+          <td style="padding:0.7rem 0.9rem;">Chinthayya</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e3f2fd;color:#0d47a1;padding:2px 7px;border-radius:12px;font-size:0.74rem;font-weight:600;">Male</span></td>
+          <td style="padding:0.7rem 0.9rem;">1980-07-01</td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#fff3e0;color:#e65100;padding:2px 8px;border-radius:30px;font-size:0.75rem;font-weight:700;">ST</span></td>
+          <td style="padding:0.7rem 0.9rem;"><span style="background:#e0f2f1;color:#00695c;padding:2px 8px;border-radius:15px;font-size:0.75rem;font-weight:600;">Kampli</span></td>
+          <td style="padding:0.7rem 0.9rem;font-size:0.78rem;color:#555;">Pragati Krishna Gramina Bank</td>
+        </tr>
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<script>
+function switchFishTab(tabId, btn) {
+  var panels = document.querySelectorAll('.fish-tab-panel');
+  panels.forEach(function(p) { p.style.display = 'none'; });
+  
+  var buttons = ['btn-tab-all', 'btn-tab-sc', 'btn-tab-upd'];
+  buttons.forEach(function(bId) {
+    var b = document.getElementById(bId);
+    if(b) {
+      b.style.background = '#fff';
+      b.style.color = '#0277bd';
+    }
+  });
+  
+  var target = document.getElementById(tabId);
+  if(target) target.style.display = 'block';
+  if(btn) {
+    btn.style.background = '#0277bd';
+    btn.style.color = '#fff';
+  }
+}
+</script>
+
+
 <section id="gallery" style="background:var(--gray-light); padding:5rem 0;">
   <div class="container">
     <div class="section-intro" style="text-align:center; max-width:600px; margin:0 auto 2rem;">
@@ -260,6 +1757,26 @@
   </div>
 </section>
 
+<!-- CONTACT -->
+<section id="contact" style="background:var(--off-white);">
+  <div class="container">
+    <div class="section-intro">
+      <span class="section-tag">Get in Touch</span>
+      <h2 class="section-heading">Contact PCDF Trust</h2>
+      <p class="section-subheading">Reach out for NFDB training enquiries, partnership, or field collaboration.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="contact-item"><div class="contact-icon">👤</div><div><strong>Contact Person</strong><p>Ragu Gouda</p></div></div>
+        <div class="contact-item"><div class="contact-icon">📍</div><div><strong>Training Centre</strong><p>Kanvithimmalapur, Ballari District,<br />Karnataka — 583132</p></div></div>
+        <div class="contact-item"><div class="contact-icon">📞</div><div><strong>Mobile Number</strong><p><a href="tel:+919663717584">96637 17584</a></p></div></div>
+        <div class="contact-item"><div class="contact-icon">📧</div><div><strong>Email</strong><p><a href="mailto:info@pcdftrust.org">info@pcdftrust.org</a></p></div></div>
+        <div class="contact-item"><div class="contact-icon">🌐</div><div><strong>Website</strong><p><a href="https://pcdftrust.org" target="_blank" rel="noopener noreferrer">www.pcdftrust.org</a></p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- LIGHTBOX -->
 <div id="lightbox" role="dialog" aria-modal="true" aria-label="Image lightbox">
   <button id="lightbox-close" onclick="closeLightbox()" aria-label="Close lightbox">&#x2715;</button>
@@ -279,15 +1796,21 @@
       </div>
       <div>
         <h4>Projects</h4>
-        <ul class="footer-links">
-          <li><a href="awd-project.html">AWD Project</a></li>
-          <li><a href="samarth-project.html">PM Samarth Training</a></li>
-          <li><a href="fish-project.html">NFDB Fish Farming</a></li>
+                <ul class="footer-links">
+          <li><a href="awd-project.html">🌾 AWD Project</a></li>
+          <li><a href="samarth-project.html">🧵 PM Samarth</a></li>
+          <li><a href="fish-project.html">🐟 NFDB Fish Farming</a></li>
+          <li><a href="ksdc-project.html">🏛️ KSDC Programme</a></li>
+          <li><a href="koushalya-project.html">🌟 Koushalya Karnataka</a></li>
         </ul>
       </div>
       <div>
         <h4>Contact</h4>
         <ul class="footer-links">
+          <li>Ragu Gouda</li>
+          <li><a href="tel:+919663717584">96637 17584</a></li>
+          <li><a href="mailto:info@pcdftrust.org">info@pcdftrust.org</a></li>
+          <li><a href="https://pcdftrust.org" target="_blank" rel="noopener noreferrer">www.pcdftrust.org</a></li>
           <li>Kanvithimmalapur, Karnataka 583132</li>
           <li>Ballari District</li>
         </ul>

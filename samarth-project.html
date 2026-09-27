@@ -44,13 +44,65 @@
     .back-link:hover{opacity:1;color:#fff;}    .gallery-filter-btn{padding:0.45rem 1.1rem;border:2px solid #e91e63;background:#fff;color:#ad1457;border-radius:50px;font-size:0.82rem;font-weight:600;cursor:pointer;transition:all 0.25s;}
     .gallery-filter-btn.active,.gallery-filter-btn:hover{background:#e91e63;color:#fff;}
     .gallery-item.hidden{display:none;}
-  </style>
-</head>
+  
+    .impact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .impact-card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 2rem 1.5rem;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(123,31,162,0.12);
+      border-top: 4px solid #7b1fa2;
+      transition: transform 0.25s, box-shadow 0.25s;
+    }
+    .impact-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(123,31,162,0.22);
+    }
+    .impact-card-icon {
+      font-size: 2.4rem;
+      margin-bottom: 0.75rem;
+      display: block;
+    }
+    .impact-card-num {
+      font-family: 'Poppins', sans-serif;
+      font-size: 2.4rem;
+      font-weight: 800;
+      color: #6a1b9a !important;
+      display: block;
+      line-height: 1.1;
+    }
+    .impact-card-label {
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: #ad1457;
+      margin: 0.4rem 0 0.75rem;
+      display: block;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .impact-card p {
+      font-size: 0.84rem;
+      color: #555;
+      line-height: 1.55;
+      margin: 0;
+    }
+</style>
+<style>
+  #batch-list table tbody tr:nth-child(even) { background: #faf5ff; }
+  #batch-list table tbody tr:hover { background: #f3e5f5 !important; }
+  #batch-list table tbody td { padding: 0.65rem 1rem; font-size: 0.82rem; color: #333; border-bottom: 1px solid #f0e6fa; }
+</style></head>
 <body>
 
 <nav id="navbar" role="navigation" aria-label="Main navigation">
   <div class="container navbar-inner">
-    <a href="awd-project.html" class="navbar-brand">
+    <a href="index.html" class="navbar-brand">
       <div class="brand-logo">🧵</div>
       <div class="brand-text">
         <span class="brand-name">PM Samarth</span>
@@ -62,7 +114,7 @@
       <li><a href="#objectives">Objectives</a></li>
       <li><a href="#programme">Programme</a></li>
       <li><a href="#how-it-works">How It Works</a></li>
-      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#batch-list">Trainees</a></li><li><a href="#gallery">Gallery</a></li>
       <li><a href="#impact">Impact</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
@@ -78,7 +130,7 @@
     <li><a href="#objectives">Objectives</a></li>
     <li><a href="#programme">Programme</a></li>
     <li><a href="#how-it-works">How It Works</a></li>
-    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#batch-list">Trainees</a></li><li><a href="#gallery">Gallery</a></li>
     <li><a href="#impact">Impact</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
@@ -89,7 +141,7 @@
   <div class="hero-overlay-pattern"></div>
   <div class="container">
     <div class="hero-content">
-      <a href="awd-project.html" class="back-link">← Back to PCDF Trust Projects</a>
+      <a href="index.html" class="back-link">← Back to PCDF Trust Projects</a>
       <div class="hero-badge">🧵 PCDF Trust &nbsp;|&nbsp; Women Empowerment Initiative</div>
       <h1 class="hero-title" style="font-size:clamp(1.8rem,4.5vw,3.5rem);">
         Progressive Community &amp;<br /><span>Development Foundation Trust</span>
@@ -223,6 +275,201 @@
 </section>
 
 <!-- GALLERY -->
+
+<!-- BATCH LIST SECTION -->
+<section id="batch-list" style="background:#f7f9fc; padding:5rem 0;">
+  <div class="container">
+    <div class="section-intro" style="text-align:center; max-width:700px; margin:0 auto 3rem;">
+      <span class="section-tag" style="background:#f3e5f5;color:#6a1b9a;">📋 Trainee Registry</span>
+      <h2 class="section-heading" style="color:#4a148c;">PM Samarth — Enrolled Trainees</h2>
+      <p>Official batch-wise list of all <strong>90 women trainees</strong> enrolled under the PM Samarth Scheme at Kampli & Kanvithimmalapura training centres.</p>
+      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-top:1.5rem;">
+        <span style="background:#e3f2fd;color:#0277bd;padding:0.4rem 1rem;border-radius:30px;font-weight:700;font-size:0.85rem;">OBC: 45</span>
+        <span style="background:#e8f5e9;color:#1b5e20;padding:0.4rem 1rem;border-radius:30px;font-weight:700;font-size:0.85rem;">SC: 27</span>
+        <span style="background:#fff3e0;color:#e65100;padding:0.4rem 1rem;border-radius:30px;font-weight:700;font-size:0.85rem;">ST: 12</span>
+        <span style="background:#fce4ec;color:#880e4f;padding:0.4rem 1rem;border-radius:30px;font-weight:700;font-size:0.85rem;">GEN: 6</span>
+        <span style="background:#6a1b9a;color:#fff;padding:0.4rem 1rem;border-radius:30px;font-weight:700;font-size:0.85rem;">Total: 90</span>
+      </div>
+
+    </div>
+
+    <!-- Batch Tabs -->
+    <div style="display:flex;gap:0.75rem;justify-content:center;flex-wrap:wrap;margin-bottom:2rem;">
+      <button onclick="showBatch('b1',this)" id="tab-b1" style="padding:0.5rem 1.3rem;border:2px solid #6a1b9a;background:#6a1b9a;color:#fff;border-radius:50px;font-weight:700;cursor:pointer;font-size:0.85rem;">Batch 1 — 30 Trainees</button>
+      <button onclick="showBatch('b2',this)" id="tab-b2" style="padding:0.5rem 1.3rem;border:2px solid #6a1b9a;background:#fff;color:#6a1b9a;border-radius:50px;font-weight:700;cursor:pointer;font-size:0.85rem;">Batch 2 — 30 Trainees</button>
+      <button onclick="showBatch('b3',this)" id="tab-b3" style="padding:0.5rem 1.3rem;border:2px solid #6a1b9a;background:#fff;color:#6a1b9a;border-radius:50px;font-weight:700;cursor:pointer;font-size:0.85rem;">Batch 3 — 30 Trainees</button>
+    </div>
+
+    <!-- Batch 1 -->
+    <div id="batch-b1" style="overflow-x:auto;">
+      <div style="background:linear-gradient(135deg,#6a1b9a,#9c27b0);color:#fff;border-radius:12px 12px 0 0;padding:1.2rem 1.5rem;">
+        <h3 style="margin:0;font-size:1rem;">🏷️ Batch 1 (Batch ID: 61 / 44202) — 30 Trainees</h3>
+        <p style="margin:0.3rem 0 0;font-size:0.82rem;opacity:0.85;">TC: SBA-SAMARTH-040-KAMPLI-BALLARI | Start: 23-02-2026 | End: 28-03-2026 | Trainer: G Shilpa</p>
+      </div>
+      <table style="width:100%;border-collapse:collapse;background:#fff;border-radius:0 0 12px 12px;box-shadow:0 4px 20px rgba(0,0,0,0.08);overflow:hidden;">
+        <thead style="background:#f3e5f5;">
+          <tr>
+            <th style="padding:0.75rem 1rem;text-align:left;font-size:0.8rem;color:#6a1b9a;border-bottom:2px solid #e1bee7;">#</th>
+            <th style="padding:0.75rem 1rem;text-align:left;font-size:0.8rem;color:#6a1b9a;border-bottom:2px solid #e1bee7;">Trainee Name</th>
+            <th style="padding:0.75rem 1rem;text-align:left;font-size:0.8rem;color:#6a1b9a;border-bottom:2px solid #e1bee7;">Relation</th>
+            <th style="padding:0.75rem 1rem;text-align:left;font-size:0.8rem;color:#6a1b9a;border-bottom:2px solid #e1bee7;">Category</th>
+            <th style="padding:0.75rem 1rem;text-align:left;font-size:0.8rem;color:#6a1b9a;border-bottom:2px solid #e1bee7;">Centre</th>
+          </tr>
+        </thead>
+        <tbody>
+<tr><td>1</td><td>Harijana Dodda Basamma</td><td>—</td><td><span style="background:#e8f5e9;color:#1b5e20;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">SC</span></td><td>Kampli</td></tr>
+<tr><td>2</td><td>Amena Bee</td><td>—</td><td><span style="background:#e3f2fd;color:#0277bd;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">OBC</span></td><td>Kampli</td></tr>
+<tr><td>3</td><td>G Rekha</td><td>—</td><td><span style="background:#e3f2fd;color:#0277bd;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">OBC</span></td><td>Kampli</td></tr>
+<tr><td>4</td><td>Gollara Parvathi</td><td>—</td><td><span style="background:#e3f2fd;color:#0277bd;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">OBC</span></td><td>Kampli</td></tr>
+<tr><td>5</td><td>Iramma H</td><td>—</td><td><span style="background:#e8f5e9;color:#1b5e20;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">SC</span></td><td>Kampli</td></tr>
+<tr><td>6</td><td>Usha</td><td>—</td><td><span style="background:#e8f5e9;color:#1b5e20;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">SC</span></td><td>Kampli</td></tr>
+<tr><td>7</td><td>H Eramma</td><td>—</td><td><span style="background:#e8f5e9;color:#1b5e20;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">SC</span></td><td>Kampli</td></tr>
+<tr><td>8</td><td>Jainabi</td><td>—</td><td><span style="background:#e3f2fd;color:#0277bd;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">OBC</span></td><td>Kampli</td></tr>
+<tr><td>9</td><td>Meghana</td><td>—</td><td><span style="background:#fff3e0;color:#e65100;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">ST</span></td><td>Kampli</td></tr>
+<tr><td>10</td><td>H Saraswathi</td><td>—</td><td><span style="background:#e8f5e9;color:#1b5e20;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">SC</span></td><td>Kampli</td></tr>
+<tr><td>11</td><td>Gollar Ankitha</td><td>—</td><td><span style="background:#e3f2fd;color:#0277bd;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">OBC</span></td><td>Kampli</td></tr>
+<tr><td>12</td><td>B Mumtaj Begum</td><td>—</td><td><span style="background:#e3f2fd;color:#0277bd;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">OBC</span></td><td>Kampli</td></tr>
+<tr><td>13</td><td>Harijana Soundarya</td><td>—</td><td><span style="background:#e8f5e9;color:#1b5e20;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">SC</span></td><td>Kampli</td></tr>
+<tr><td>14</td><td>Sharada R S</td><td>—</td><td><span style="background:#e3f2fd;color:#0277bd;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">OBC</span></td><td>Kampli</td></tr>
+<tr><td>15</td><td>D Shanthi</td><td>—</td><td><span style="background:#fce4ec;color:#880e4f;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">GEN</span></td><td>Kampli</td></tr>
+<tr><td>16</td><td>D Chaitra</td><td>—</td><td><span style="background:#fce4ec;color:#880e4f;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">GEN</span></td><td>Kampli</td></tr>
+<tr><td>17</td><td>Chaitra S Patil</td><td>—</td><td><span style="background:#fce4ec;color:#880e4f;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">GEN</span></td><td>Kampli</td></tr>
+<tr><td>18</td><td>E Shilakumari</td><td>—</td><td><span style="background:#fce4ec;color:#880e4f;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">GEN</span></td><td>Kampli</td></tr>
+<tr><td>19</td><td>Chaithra Pujari</td><td>—</td><td><span style="background:#e3f2fd;color:#0277bd;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">OBC</span></td><td>Kampli</td></tr>
+<tr><td>20</td><td>G N Ambika</td><td>—</td><td><span style="background:#e8f5e9;color:#1b5e20;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">SC</span></td><td>Kampli</td></tr>
+<tr><td>21</td><td>G Bhagya Lakshmi</td><td>—</td><td><span style="background:#e3f2fd;color:#0277bd;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">OBC</span></td><td>Kampli</td></tr>
+<tr><td>22</td><td>G Kavitha</td><td>—</td><td><span style="background:#e3f2fd;color:#0277bd;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">OBC</span></td><td>Kampli</td></tr>
+<tr><td>23</td><td>G Vijayalakshmi</td><td>—</td><td><span style="background:#fce4ec;color:#880e4f;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">GEN</span></td><td>Kampli</td></tr>
+<tr><td>24</td><td>G Lakshmi</td><td>—</td><td><span style="background:#fce4ec;color:#880e4f;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">GEN</span></td><td>Kampli</td></tr>
+<tr><td>25</td><td>H Sumalata</td><td>—</td><td><span style="background:#e8f5e9;color:#1b5e20;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">SC</span></td><td>Kampli</td></tr>
+<tr><td>26</td><td>Nayakara Vijayalakshmi</td><td>—</td><td><span style="background:#fff3e0;color:#e65100;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">ST</span></td><td>Kampli</td></tr>
+<tr><td>27</td><td>M Shailaja</td><td>—</td><td><span style="background:#fff3e0;color:#e65100;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">ST</span></td><td>Kampli</td></tr>
+<tr><td>28</td><td>Nayakar Huligemma</td><td>—</td><td><span style="background:#fff3e0;color:#e65100;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">ST</span></td><td>Kampli</td></tr>
+<tr><td>29</td><td>Ranjitha K</td><td>—</td><td><span style="background:#e8f5e9;color:#1b5e20;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">SC</span></td><td>Kampli</td></tr>
+<tr><td>30</td><td>T Joythi</td><td>—</td><td><span style="background:#fff3e0;color:#e65100;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">ST</span></td><td>Kampli</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Batch 2 -->
+    <div id="batch-b2" style="overflow-x:auto;display:none;">
+      <div style="background:linear-gradient(135deg,#6a1b9a,#9c27b0);color:#fff;border-radius:12px 12px 0 0;padding:1.2rem 1.5rem;">
+        <h3 style="margin:0;font-size:1rem;">🏷️ Batch 2 — 30 Trainees</h3>
+        <p style="margin:0.3rem 0 0;font-size:0.82rem;opacity:0.85;">Centre: Kampli &amp; Kanvithimmalapura | Categories: OBC, SC, ST</p>
+      </div>
+      <table style="width:100%;border-collapse:collapse;background:#fff;border-radius:0 0 12px 12px;box-shadow:0 4px 20px rgba(0,0,0,0.08);overflow:hidden;">
+        <thead style="background:#f3e5f5;">
+          <tr>
+            <th style="padding:0.75rem 1rem;text-align:left;font-size:0.8rem;color:#6a1b9a;border-bottom:2px solid #e1bee7;">#</th>
+            <th style="padding:0.75rem 1rem;text-align:left;font-size:0.8rem;color:#6a1b9a;border-bottom:2px solid #e1bee7;">Trainee Name</th>
+            <th style="padding:0.75rem 1rem;text-align:left;font-size:0.8rem;color:#6a1b9a;border-bottom:2px solid #e1bee7;">Spouse / Father / Mother</th>
+            <th style="padding:0.75rem 1rem;text-align:left;font-size:0.8rem;color:#6a1b9a;border-bottom:2px solid #e1bee7;">Category</th>
+            <th style="padding:0.75rem 1rem;text-align:left;font-size:0.8rem;color:#6a1b9a;border-bottom:2px solid #e1bee7;">Village</th>
+          </tr>
+        </thead>
+        <tbody>
+<tr><td>1</td><td>Chinnur Geetha</td><td>C Sharanappa</td><td><span style="background:#e3f2fd;color:#0277bd;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">OBC</span></td><td>Kanvithimmalapura</td></tr>
+<tr><td>2</td><td>N T Karishma</td><td>Husain Basha</td><td><span style="background:#e3f2fd;color:#0277bd;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">OBC</span></td><td>Kampli</td></tr>
+<tr><td>3</td><td>M Jayashri</td><td>M Parashurama</td><td><span style="background:#e3f2fd;color:#0277bd;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">OBC</span></td><td>N 10 Muddapura</td></tr>
+<tr><td>4</td><td>Deepa Pujar</td><td>Pujar Vekatesh</td><td><span style="background:#e3f2fd;color:#0277bd;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">OBC</span></td><td>Kanvithimmalapura</td></tr>
+<tr><td>5</td><td>E Sheela Kumari</td><td>Satyanarayana Shetty</td><td><span style="background:#e3f2fd;color:#0277bd;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">OBC</span></td><td>Kanvithimmalapura</td></tr>
+<tr><td>6</td><td>Neelamma</td><td>Somanagouda</td><td><span style="background:#e3f2fd;color:#0277bd;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">OBC</span></td><td>Kanvithimmalapura</td></tr>
+<tr><td>7</td><td>G Jyothi</td><td>Krishna</td><td><span style="background:#e3f2fd;color:#0277bd;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">OBC</span></td><td>Kanvithimmalapura</td></tr>
+<tr><td>8</td><td>G Anitha</td><td>G Renukaraja</td><td><span style="background:#e3f2fd;color:#0277bd;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">OBC</span></td><td>Kanvithimmalapura</td></tr>
+<tr><td>9</td><td>G Kavitha</td><td>Renukakumar</td><td><span style="background:#e3f2fd;color:#0277bd;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">OBC</span></td><td>Kanvithimmalapura</td></tr>
+<tr><td>10</td><td>G Pooja</td><td>Renukappa</td><td><span style="background:#e3f2fd;color:#0277bd;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">OBC</span></td><td>Kanvithimmalapura</td></tr>
+<tr><td>11</td><td>G Ashvini</td><td>G Shreenivasa</td><td><span style="background:#e3f2fd;color:#0277bd;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">OBC</span></td><td>Kanvithimmalapura</td></tr>
+<tr><td>12</td><td>Priyanka</td><td>Maruthi</td><td><span style="background:#e3f2fd;color:#0277bd;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">OBC</span></td><td>Kanvithimmalapura</td></tr>
+<tr><td>13</td><td>G Arshiya</td><td>Mehaboob Sab</td><td><span style="background:#e3f2fd;color:#0277bd;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">OBC</span></td><td>Kampli</td></tr>
+<tr><td>14</td><td>C Vishalakshi</td><td>C Shivakumar</td><td><span style="background:#e3f2fd;color:#0277bd;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">OBC</span></td><td>No 10 Muddapura</td></tr>
+<tr><td>15</td><td>Renukamma/ H Gouramma</td><td>H M'Chennayya Swamy</td><td><span style="background:#e3f2fd;color:#0277bd;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">OBC</span></td><td>Kampli</td></tr>
+<tr><td>16</td><td>B Sujatha</td><td>Somashekar</td><td><span style="background:#e3f2fd;color:#0277bd;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">OBC</span></td><td>Kampli</td></tr>
+<tr><td>17</td><td>Shashikala</td><td>Eshappa</td><td><span style="background:#e3f2fd;color:#0277bd;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">OBC</span></td><td>Kampli</td></tr>
+<tr><td>18</td><td>P Lakshmi</td><td>Pujar Vekatesh</td><td><span style="background:#e3f2fd;color:#0277bd;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">OBC</span></td><td>Kanvithimmalapura</td></tr>
+<tr><td>19</td><td>H Jothi</td><td>H Bhimappa</td><td><span style="background:#e8f5e9;color:#1b5e20;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">SC</span></td><td>Kanvithimmalapura</td></tr>
+<tr><td>20</td><td>Lavanya</td><td>Gadilinga</td><td><span style="background:#e8f5e9;color:#1b5e20;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">SC</span></td><td>Kanvithimmalapura</td></tr>
+<tr><td>21</td><td>Harijana Prema</td><td>Honnuramma</td><td><span style="background:#e8f5e9;color:#1b5e20;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">SC</span></td><td>Kanvithimmalapura</td></tr>
+<tr><td>22</td><td>V Sarasvathi</td><td>Virupakshai</td><td><span style="background:#e8f5e9;color:#1b5e20;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">SC</span></td><td>Kampli</td></tr>
+<tr><td>23</td><td>H K Jayalkshmi</td><td>Ramanjini</td><td><span style="background:#e8f5e9;color:#1b5e20;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">SC</span></td><td>Old Nelludi</td></tr>
+<tr><td>24</td><td>Chaitra</td><td>Amaresha</td><td><span style="background:#e8f5e9;color:#1b5e20;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">SC</span></td><td>Kampli</td></tr>
+<tr><td>25</td><td>H B Neelamma</td><td>Mareppa</td><td><span style="background:#e8f5e9;color:#1b5e20;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">SC</span></td><td>Kanvithimmalapura</td></tr>
+<tr><td>26</td><td>Janaki</td><td>Honnurappa</td><td><span style="background:#e8f5e9;color:#1b5e20;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">SC</span></td><td>Kanvithimmalapura</td></tr>
+<tr><td>27</td><td>V Nagaveni</td><td>Shivamurthy</td><td><span style="background:#e8f5e9;color:#1b5e20;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">SC</span></td><td>Kampli</td></tr>
+<tr><td>28</td><td>T Netravathi</td><td>T Ramayya</td><td><span style="background:#fff3e0;color:#e65100;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">ST</span></td><td>Kanvithimmalapura</td></tr>
+<tr><td>29</td><td>N Mamatha</td><td>Komarappa</td><td><span style="background:#fff3e0;color:#e65100;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">ST</span></td><td>Kanvithimmalapura</td></tr>
+<tr><td>30</td><td>N Chandana</td><td>Nagappa</td><td><span style="background:#fff3e0;color:#e65100;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">ST</span></td><td>Kanvithimmalapura</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Batch 3 -->
+    <div id="batch-b3" style="overflow-x:auto;display:none;">
+      <div style="background:linear-gradient(135deg,#6a1b9a,#9c27b0);color:#fff;border-radius:12px 12px 0 0;padding:1.2rem 1.5rem;">
+        <h3 style="margin:0;font-size:1rem;">🏷️ Batch 3 — 30 Trainees</h3>
+        <p style="margin:0.3rem 0 0;font-size:0.82rem;opacity:0.85;">Centre: Kampli &amp; Kanvithimmalapura | Categories: OBC, SC, ST</p>
+      </div>
+      <table style="width:100%;border-collapse:collapse;background:#fff;border-radius:0 0 12px 12px;box-shadow:0 4px 20px rgba(0,0,0,0.08);overflow:hidden;">
+        <thead style="background:#f3e5f5;">
+          <tr>
+            <th style="padding:0.75rem 1rem;text-align:left;font-size:0.8rem;color:#6a1b9a;border-bottom:2px solid #e1bee7;">#</th>
+            <th style="padding:0.75rem 1rem;text-align:left;font-size:0.8rem;color:#6a1b9a;border-bottom:2px solid #e1bee7;">Trainee Name</th>
+            <th style="padding:0.75rem 1rem;text-align:left;font-size:0.8rem;color:#6a1b9a;border-bottom:2px solid #e1bee7;">Spouse / Father / Mother</th>
+            <th style="padding:0.75rem 1rem;text-align:left;font-size:0.8rem;color:#6a1b9a;border-bottom:2px solid #e1bee7;">Category</th>
+            <th style="padding:0.75rem 1rem;text-align:left;font-size:0.8rem;color:#6a1b9a;border-bottom:2px solid #e1bee7;">Village</th>
+          </tr>
+        </thead>
+        <tbody>
+<tr><td>1</td><td>Manjamma G K</td><td>Hanumesh</td><td><span style="background:#e3f2fd;color:#0277bd;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">OBC</span></td><td>Kanvithimmalapura</td></tr>
+<tr><td>2</td><td>T Neelamma</td><td>Dyavanna</td><td><span style="background:#fff3e0;color:#e65100;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">ST</span></td><td>Kanvithimmalapura</td></tr>
+<tr><td>3</td><td>Dangi Kallamma</td><td>Mahesh</td><td><span style="background:#e3f2fd;color:#0277bd;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">OBC</span></td><td>Kanvithimmalapura</td></tr>
+<tr><td>4</td><td>Ulluru Lakshmi</td><td>Devendrappa</td><td><span style="background:#e3f2fd;color:#0277bd;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">OBC</span></td><td>Kanvithimmalapura</td></tr>
+<tr><td>5</td><td>U Sharada</td><td>Manjunatha</td><td><span style="background:#e3f2fd;color:#0277bd;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">OBC</span></td><td>Kanvithimmalapura</td></tr>
+<tr><td>6</td><td>Rajeshwari</td><td>Jambunatha</td><td><span style="background:#e3f2fd;color:#0277bd;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">OBC</span></td><td>Kanvithimmalapura</td></tr>
+<tr><td>7</td><td>O Netravathi</td><td>Nagendra</td><td><span style="background:#e3f2fd;color:#0277bd;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">OBC</span></td><td>Kanvithimmalapura</td></tr>
+<tr><td>8</td><td>G Vanitha</td><td>Somanagouda</td><td><span style="background:#e3f2fd;color:#0277bd;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">OBC</span></td><td>Kanvithimmalapura</td></tr>
+<tr><td>9</td><td>N Parvathi</td><td>Venkatesha</td><td><span style="background:#fff3e0;color:#e65100;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">ST</span></td><td>Kanvithimmalapura</td></tr>
+<tr><td>10</td><td>G Shivagangamma</td><td>Basavanagouda</td><td><span style="background:#e3f2fd;color:#0277bd;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">OBC</span></td><td>Kanvithimmalapura</td></tr>
+<tr><td>11</td><td>B Revathi</td><td>Virupakshi</td><td><span style="background:#e3f2fd;color:#0277bd;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">OBC</span></td><td>Kampli</td></tr>
+<tr><td>12</td><td>N Manjamma</td><td>Ramanjini</td><td><span style="background:#e8f5e9;color:#1b5e20;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">SC</span></td><td>Kampli</td></tr>
+<tr><td>13</td><td>Pavani</td><td>Sharanappa</td><td><span style="background:#e8f5e9;color:#1b5e20;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">SC</span></td><td>Kampli</td></tr>
+<tr><td>14</td><td>H Annapurna</td><td>H Thayappa</td><td><span style="background:#e8f5e9;color:#1b5e20;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">SC</span></td><td>Kanvithimmalapura</td></tr>
+<tr><td>15</td><td>Anitha</td><td>Renukappa</td><td><span style="background:#e8f5e9;color:#1b5e20;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">SC</span></td><td>Kanvithimmalapura</td></tr>
+<tr><td>16</td><td>G Saroja</td><td>Manikumar</td><td><span style="background:#e3f2fd;color:#0277bd;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">OBC</span></td><td>Kanvithimmalapura</td></tr>
+<tr><td>17</td><td>G Sindhu</td><td>Narayanappa</td><td><span style="background:#e3f2fd;color:#0277bd;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">OBC</span></td><td>Kanvithimmalapura</td></tr>
+<tr><td>18</td><td>G Nagaveni</td><td>Venkatesha</td><td><span style="background:#e3f2fd;color:#0277bd;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">OBC</span></td><td>Kanvithimmalapura</td></tr>
+<tr><td>19</td><td>G Lakshmi</td><td>G Veeresha</td><td><span style="background:#e3f2fd;color:#0277bd;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">OBC</span></td><td>Kanvithimmalapura</td></tr>
+<tr><td>20</td><td>Dangi Puspavathi</td><td>Shivappa</td><td><span style="background:#e3f2fd;color:#0277bd;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">OBC</span></td><td>Kanvithimmalapura</td></tr>
+<tr><td>21</td><td>N G Shivarudramma</td><td>Maresha</td><td><span style="background:#fff3e0;color:#e65100;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">ST</span></td><td>Kanvithimmalapura</td></tr>
+<tr><td>22</td><td>Vaishnavi</td><td>Narayana</td><td><span style="background:#e8f5e9;color:#1b5e20;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">SC</span></td><td>Kampli</td></tr>
+<tr><td>23</td><td>Sunitha</td><td>Honnuraswamy</td><td><span style="background:#e8f5e9;color:#1b5e20;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">SC</span></td><td>Kampli</td></tr>
+<tr><td>24</td><td>Ramzan B</td><td>Rajasab</td><td><span style="background:#e3f2fd;color:#0277bd;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">OBC</span></td><td>Kampli</td></tr>
+<tr><td>25</td><td>P Jayashri</td><td>Devendra</td><td><span style="background:#e3f2fd;color:#0277bd;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">OBC</span></td><td>Ramsagara</td></tr>
+<tr><td>26</td><td>Vanitha</td><td>Umamaheshwar Rao</td><td><span style="background:#e3f2fd;color:#0277bd;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">OBC</span></td><td>Kampli</td></tr>
+<tr><td>27</td><td>H Netravathi</td><td>H Anjineya</td><td><span style="background:#e8f5e9;color:#1b5e20;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">SC</span></td><td>Kanvithimmalapura</td></tr>
+<tr><td>28</td><td>N Shanthamma</td><td>Maresha</td><td><span style="background:#fff3e0;color:#e65100;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">ST</span></td><td>Kanvithimmalapura</td></tr>
+<tr><td>29</td><td>H Huligemma</td><td>Annappa</td><td><span style="background:#e8f5e9;color:#1b5e20;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">SC</span></td><td>Kampli</td></tr>
+<tr><td>30</td><td>H Sunitha</td><td>Basavaraja</td><td><span style="background:#e8f5e9;color:#1b5e20;padding:2px 9px;border-radius:30px;font-size:0.73rem;font-weight:700;">SC</span></td><td>Kanvithimmalapura</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+</section>
+
+<script>
+function showBatch(id, btn) {
+  ['b1','b2','b3'].forEach(function(b) {
+    document.getElementById('batch-'+b).style.display = 'none';
+    document.getElementById('tab-'+b).style.background = '#fff';
+    document.getElementById('tab-'+b).style.color = '#6a1b9a';
+  });
+  document.getElementById('batch-'+id).style.display = 'block';
+  btn.style.background = '#6a1b9a';
+  btn.style.color = '#fff';
+}
+</script>
+
+
 <section id="gallery">
   <div class="container">
     <div class="section-intro">
@@ -316,7 +563,14 @@
         <img src="assets/samarth-gallery/samarth_certificate_02.jpg" alt="Graduates with certificates" loading="lazy" />
         <div class="gallery-caption">Proud Graduates — Kampli, 29 May 2026</div>
       </div>
-
+      <div class="gallery-item" data-cat="certificate" onclick="openLightbox('assets/samarth-gallery/samarth_certificate_03.jpg','Certificate distribution group photo — Kampli, 29 May 2026')">
+        <img src="assets/samarth-gallery/samarth_certificate_03.jpg" alt="Kampli Batch Graduates" loading="lazy" />
+        <div class="gallery-caption">Kampli Batch Graduates — 29 May 2026</div>
+      </div>
+      <div class="gallery-item" data-cat="certificate" onclick="openLightbox('assets/samarth-gallery/samarth_certificate_04.jpg','Certified Tailoring Trainees — Kampli, 29 May 2026')">
+        <img src="assets/samarth-gallery/samarth_certificate_04.jpg" alt="Certified Trainees" loading="lazy" />
+        <div class="gallery-caption">Certified Trainees — Kampli, 29 May 2026</div>
+      </div>
     </div>
   </div>
 </section>
@@ -329,7 +583,7 @@
 </div>
 
 <!-- IMPACT -->
-<section id="impact" style="background:var(--off-white);">
+<section id="impact" style="background:#f3e5f5; padding:5rem 0;">
   <div class="container">
     <div class="section-intro">
       <span class="section-tag">Our Reach</span>
@@ -374,7 +628,11 @@
     <div class="contact-grid">
       <div class="contact-info">
         <div class="contact-item"><div class="contact-icon">🏢</div><div><strong>Organisation</strong><p>Progressive Community &amp; Development Foundation (PCDF) Trust</p></div></div>
+        <div class="contact-item"><div class="contact-icon">👤</div><div><strong>Contact Person</strong><p>Ragu Gouda</p></div></div>
         <div class="contact-item"><div class="contact-icon">📍</div><div><strong>Training Centre</strong><p>Muddapura No.10, Sh 29,<br />Ballari District, Karnataka — 583132</p></div></div>
+        <div class="contact-item"><div class="contact-icon">📞</div><div><strong>Mobile Number</strong><p><a href="tel:+919663717584">96637 17584</a></p></div></div>
+        <div class="contact-item"><div class="contact-icon">📧</div><div><strong>Email</strong><p><a href="mailto:info@pcdftrust.org">info@pcdftrust.org</a></p></div></div>
+        <div class="contact-item"><div class="contact-icon">🌐</div><div><strong>Website</strong><p><a href="https://pcdftrust.org" target="_blank" rel="noopener noreferrer">www.pcdftrust.org</a></p></div></div>
         <div class="contact-item"><div class="contact-icon">📋</div><div><strong>Scheme</strong><p>PM Samarth — Ministry of Textiles, Government of India</p></div></div>
       </div>
       <div class="contact-form-wrap">
@@ -413,23 +671,27 @@
         <li><a href="#objectives">Objectives</a></li>
         <li><a href="#programme">Programme Details</a></li>
         <li><a href="#how-it-works">How It Works</a></li>
-        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#batch-list">Trainees</a></li><li><a href="#gallery">Gallery</a></li>
         <li><a href="#impact">Impact</a></li>
       </ul>
     </div>
     <div class="footer-col">
       <h4>PCDF Trust Projects</h4>
-      <ul class="footer-links">
-        <li><a href="awd-project.html">AWD — Paddy Water Saving</a></li>
-        <li><a href="samarth-project.html">PM Samarth — Tailor Training</a></li>
-      </ul>
+              <ul class="footer-links">
+          <li><a href="awd-project.html">🌾 AWD Project</a></li>
+          <li><a href="samarth-project.html">🧵 PM Samarth</a></li>
+          <li><a href="fish-project.html">🐟 NFDB Fish Farming</a></li>
+          <li><a href="ksdc-project.html">🏛️ KSDC Programme</a></li>
+          <li><a href="koushalya-project.html">🌟 Koushalya Karnataka</a></li>
+        </ul>
     </div>
     <div class="footer-col">
       <h4>About PCDF Trust</h4>
       <ul class="footer-links">
-        <li><a href="#">About the Trust</a></li>
-        <li><a href="#">Our Projects</a></li>
-        <li><a href="#">Field Teams</a></li>
+        <li>Ragu Gouda</li>
+        <li><a href="tel:+919663717584">96637 17584</a></li>
+        <li><a href="mailto:info@pcdftrust.org">info@pcdftrust.org</a></li>
+        <li><a href="https://pcdftrust.org" target="_blank" rel="noopener noreferrer">www.pcdftrust.org</a></li>
         <li><a href="#contact">Get in Touch</a></li>
       </ul>
     </div>
@@ -462,20 +724,19 @@ function closeLightbox(){
 }
 document.getElementById('lightbox').addEventListener('click',function(e){if(e.target===this)closeLightbox();});
 document.addEventListener('keydown',function(e){if(e.key==='Escape')closeLightbox();});
-function handleContactForm(e){
-  /* ── Gallery Filter ── */
-  function filterGallery(cat, btn) {
-    document.querySelectorAll('.gallery-filter-btn').forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-    document.querySelectorAll('#main-gallery .gallery-item').forEach(item => {
-      if (cat === 'all' || item.dataset.cat === cat) {
-        item.classList.remove('hidden');
-      } else {
-        item.classList.add('hidden');
-      }
-    });
-  }
+function filterGallery(cat, btn) {
+  document.querySelectorAll('.gallery-filter-btn').forEach(function(b){ b.classList.remove('active'); });
+  btn.classList.add('active');
+  document.querySelectorAll('#main-gallery .gallery-item').forEach(function(item){
+    if (cat === 'all' || item.dataset.cat === cat) {
+      item.classList.remove('hidden');
+    } else {
+      item.classList.add('hidden');
+    }
+  });
+}
 
+function handleContactForm(e){
   e.preventDefault();
   document.getElementById('cf-success').style.display='block';
   e.target.reset();
